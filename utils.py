@@ -25,8 +25,7 @@ class Block(object):
 
         self.size = bytes_size
         self.deadline = deadline
-        self.timestamp = timestamp if timestamp else get_ms_time()
-
+        self.timestamp = timestamp if not timestamp is None else get_ms_time()
         # emulator params
         self.queue_ms = -1
         self.propagation_ms = -1

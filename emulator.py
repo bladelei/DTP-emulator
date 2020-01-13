@@ -21,7 +21,8 @@ class Emulator(object):
                  propagation_rate=3*10**8,
                  link_list=None,
                  block_file=None,
-                 trace_file=None):
+                 trace_file=None,
+                 det=0):
 
         self.a_queue, self.b_queue, self.c_queue = [], [], []
         # use shallow copy
@@ -39,14 +40,15 @@ class Emulator(object):
         self.transmission_rate = transmission_rate
         self.propagation_rate = propagation_rate
 
-        self.init_time = get_ms_time()
+        self.init_time = 0 # get_ms_time()
         self.pass_time = .0
-        self.last_past_time = .0
 
         self.trace_list = []
 
         self.fir_log = True
+        self.fir_cal = True
         self.block_circle = -1
+        self.det = det
 
         if self.trace_file:
             self.trace_list = self.get_trace()
@@ -54,7 +56,7 @@ class Emulator(object):
             self.transmission_rate = self.trace_list[0][1] * 10**6
 
 
-    def update_queue(self):
+    def update_queue(self, det=0):
 
         with open(self.block_file, "r") as f:
             self.block_circle = int(f.readline())
@@ -63,7 +65,7 @@ class Emulator(object):
             pattern=[]
             for line in f.readlines():
                 pattern.append(
-                    {pattern_cols[idx]:item.strip() for idx, item in enumerate(line.split(','))}
+                    { pattern_cols[idx]:item.strip() for idx, item in enumerate(line.split(',')) }
                 )
 
             peroid = len(pattern)
@@ -71,7 +73,7 @@ class Emulator(object):
                 ch = idx % peroid
                 block = Block(bytes_size=float(pattern[ch]["size"]),
                               deadline=float(pattern[ch]["ddl"]),
-                              timestamp=self.init_time+self.pass_time)
+                              timestamp=self.init_time+self.pass_time+idx*det)
 
                 self.cal_queue[int(pattern[ch]["type"]) ].append(block)
 
@@ -88,15 +90,17 @@ class Emulator(object):
         for _ in range(times):
 
             if self.block_file:
-                self.update_queue()
-            self.last_past_time = self.pass_time
+                self.update_queue(det=self.det)
 
             while True:
                 send_block = self.select_block()
 
+                # todo : send_block type id error
                 if not send_block:
                     break
 
+                # if the block create time > last block finished time(pass_time)
+                self.pass_time = max(self.pass_time, send_block.timestamp)
                 send_block = self.cal_block(send_block)
 
                 # loss package?
@@ -108,7 +112,8 @@ class Emulator(object):
 
         # cal queue time, use get_ms_time which contain cal time
         block.queue_ms = self.init_time + self.pass_time - block.timestamp
-        if self.pass_time <= 0.0000001:
+        if self.fir_cal:
+            self.fir_cal = False
             self.pass_time += block.queue_ms
 
         # cal transmition_ms
@@ -136,8 +141,8 @@ class Emulator(object):
             self.update_trace()
 
         # queue in link
-        block.propagation_ms = random.random() * 10
-        block.propagation_ms += 100 if not self.link_list else self.link_list[0] / self.propagation_rate
+        block.propagation_ms = random.random() * 0.5
+        block.propagation_ms += 2 if not self.link_list else self.link_list[0] / self.propagation_rate
 
         # update emulator
         self.pass_time += block.transmition_ms
@@ -183,7 +188,7 @@ class Emulator(object):
         return best_block
 
 
-    def get_trace(self, det=0):
+    def get_trace(self):
 
         trace_list = []
         with open(self.trace_file, "r") as f:
@@ -237,6 +242,7 @@ class Emulator(object):
 
         for idx in range(min(rows, len(plt_data))):
             used_label = labels if not idx else [None] * 5
+            st = 0
 
             if plt_data[idx]["queue_ms"] != -1:
                 st = plt_data[idx]["timestamp"] - self.init_time
@@ -286,7 +292,8 @@ if __name__ == '__main__':
     trace_file = "config/trace.txt"
 
     emulator = Emulator(block_file=block_file,
-                        trace_file=trace_file)
+                        trace_file=trace_file,
+                        det=1)
 
-    emulator.run(times=3)
+    emulator.run(times=1)
     emulator.analysis(rows=1000)
