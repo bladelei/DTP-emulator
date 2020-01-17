@@ -19,10 +19,14 @@ def get_ms_time(rate=1000):
 class Block(object):
 
     def __init__(self,
+                 priority=0,
+                 block_id=-1,
                  bytes_size=200000,
                  deadline=200,
                  timestamp=None):
 
+        self.priority = priority
+        self.block_id = block_id
         self.size = bytes_size
         self.deadline = deadline
         self.timestamp = timestamp if not timestamp is None else get_ms_time()
@@ -73,5 +77,4 @@ def lower_bound(arr, x, key=None):
 if __name__ == '__main__':
 
     obj = Block()
-
     print(obj)

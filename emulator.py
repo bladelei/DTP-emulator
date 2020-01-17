@@ -40,7 +40,7 @@ class Emulator(object):
         self.transmission_rate = transmission_rate
         self.propagation_rate = propagation_rate
 
-        self.init_time = 0 # get_ms_time()
+        self.init_time = 0
         self.pass_time = .0
 
         self.trace_list = []
@@ -72,8 +72,10 @@ class Emulator(object):
             for idx in range(self.block_circle):
                 ch = idx % peroid
                 block = Block(bytes_size=float(pattern[ch]["size"]),
+                              block_id=idx,
                               deadline=float(pattern[ch]["ddl"]),
-                              timestamp=self.init_time+self.pass_time+idx*det)
+                              timestamp=self.init_time+self.pass_time+idx*det,
+                              priority=pattern[ch]["type"])
 
                 self.cal_queue[int(pattern[ch]["type"]) ].append(block)
 
