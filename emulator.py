@@ -108,9 +108,9 @@ class Emulator(object):
                 # loss package?
 
                 self.log_block(send_block)
+        self.cal_QOE()
 
-
-    def cal_block(self, block):
+    def cal_block(self, block=None):
 
         # cal queue time, use get_ms_time which contain cal time
         block.queue_ms = self.init_time + self.pass_time - block.timestamp
@@ -154,8 +154,17 @@ class Emulator(object):
 
     def select_block(self):
 
+        # def is_better(block):
+        #     return (now_time - block.timestamp) * best_block.deadline > \
+        #             (now_time - best_block.timestamp) * block.deadline
+
         def is_better(block):
-            return (now_time - block.timestamp) * best_block.deadline > \
+            if int(best_block.priority) < int(block.priority):
+                return True
+            elif int(best_block.priority) > int(block.priority):
+                return False
+            else:
+                return (now_time - block.timestamp) * best_block.deadline > \
                     (now_time - best_block.timestamp) * block.deadline
 
 
@@ -189,6 +198,28 @@ class Emulator(object):
 
         return best_block
 
+    def cal_QOE(self, file_path=None):
+        QOE = []
+        data = []
+        if not file_path:
+            file_path = "output/emulator.log"
+            with open(file_path, "r") as f:
+                for line in f.readlines():
+                    data.append(json.loads(line.replace("'", '"')))
+
+        for idx in range(len(data)):
+            if data[idx]['priority'] != '-1' and data[idx]['miss_ddl'] != 1:
+                QOE.append(int(data[idx]['priority']) + 1)
+            else:
+                QOE.append(0)
+
+        with open(self.block_file, "r") as f:
+            self.block_circle = int(f.readline())
+
+        QOE = [QOE[i : i + self.block_circle] for i in range(0, len(QOE), self.block_circle)]
+        print(QOE)
+        QOE = list(map(lambda x : sum(x), QOE))
+        print(QOE)
 
     def get_trace(self):
 
@@ -285,7 +316,7 @@ class Emulator(object):
                  label="Different Bandwith", linewidth=5)
 
         plt.legend(fontsize=20)
-        plt.savefig("output/emulator-analysis.jpg")
+        plt.savefig("output/emulator-analysis.png")
 
 
 if __name__ == '__main__':
@@ -296,6 +327,5 @@ if __name__ == '__main__':
     emulator = Emulator(block_file=block_file,
                         trace_file=trace_file,
                         det=1)
-
     emulator.run(times=1)
     emulator.analysis(rows=1000)
