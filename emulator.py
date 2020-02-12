@@ -22,7 +22,8 @@ class Emulator(object):
                  link_list=None,
                  block_file=None,
                  trace_file=None,
-                 det=0):
+                 det=0,
+                 tag=0):
 
         self.a_queue, self.b_queue, self.c_queue = [], [], []
         # use shallow copy
@@ -49,6 +50,8 @@ class Emulator(object):
         self.fir_cal = True
         self.block_circle = -1
         self.det = det
+
+        self.tag = tag
 
         if self.trace_file:
             self.trace_list = self.get_trace()
@@ -108,7 +111,6 @@ class Emulator(object):
                 # loss package?
 
                 self.log_block(send_block)
-        self.cal_QOE()
 
     def cal_block(self, block=None):
 
@@ -153,12 +155,11 @@ class Emulator(object):
 
 
     def select_block(self):
+        def first_better(block):
+            return (now_time - block.timestamp) * best_block.deadline > \
+                   (now_time - best_block.timestamp) * block.deadline
 
-        # def is_better(block):
-        #     return (now_time - block.timestamp) * best_block.deadline > \
-        #             (now_time - best_block.timestamp) * block.deadline
-
-        def is_better(block):
+        def second_better(block):
             if int(best_block.priority) < int(block.priority):
                 return True
             elif int(best_block.priority) > int(block.priority):
@@ -166,7 +167,11 @@ class Emulator(object):
             else:
                 return (now_time - block.timestamp) * best_block.deadline > \
                     (now_time - best_block.timestamp) * block.deadline
-
+        def is_better(block):
+            if self.tag == 0:
+                return second_better(block)
+            else:
+                return first_better(block)
 
         best_block=None
         now_time = self.init_time + self.pass_time
@@ -216,10 +221,10 @@ class Emulator(object):
         with open(self.block_file, "r") as f:
             self.block_circle = int(f.readline())
 
-        QOE = [QOE[i : i + self.block_circle] for i in range(0, len(QOE), self.block_circle)]
         print(QOE)
-        QOE = list(map(lambda x : sum(x), QOE))
+        QOE = sum(QOE)
         print(QOE)
+        return QOE
 
     def get_trace(self):
 
@@ -326,6 +331,7 @@ if __name__ == '__main__':
 
     emulator = Emulator(block_file=block_file,
                         trace_file=trace_file,
-                        det=1)
+                        det=1,
+                        tag=0)
     emulator.run(times=1)
     emulator.analysis(rows=1000)
