@@ -51,6 +51,7 @@ class Emulator(object):
         self.block_circle = -1
         self.det = det
 
+        # used to choose block
         self.tag = tag
 
         if self.trace_file:
@@ -203,7 +204,7 @@ class Emulator(object):
 
         return best_block
 
-    def cal_QOE(self, file_path=None):
+    def cal_QOE(self, file_path=None, flag=0):
         QOE = []
         data = []
         if not file_path:
@@ -213,14 +214,19 @@ class Emulator(object):
                     data.append(json.loads(line.replace("'", '"')))
 
         for idx in range(len(data)):
-            if data[idx]['priority'] != '-1' and data[idx]['miss_ddl'] != 1:
-                QOE.append(int(data[idx]['priority']) + 1)
+            if flag == 0:
+                QOE.append((data[idx]['finish_timestamp'] -
+                            data[idx]['timestamp']) / data[idx]['deadline'])
+            elif flag == 1:
+                if data[idx]['priority'] != '-1' and data[idx]['miss_ddl'] != 1:
+                    QOE.append(1)
+                else:
+                    QOE.append(0)
             else:
-                QOE.append(0)
-
-        with open(self.block_file, "r") as f:
-            self.block_circle = int(f.readline())
-
+                if data[idx]['priority'] != '-1' and data[idx]['miss_ddl'] != 1:
+                    QOE.append(int(data[idx]['priority']) + 1)
+                else:
+                    QOE.append(0)
         print(QOE)
         QOE = sum(QOE)
         print(QOE)
@@ -334,4 +340,5 @@ if __name__ == '__main__':
                         det=1,
                         tag=0)
     emulator.run(times=1)
+    emulator.cal_QOE()
     emulator.analysis(rows=1000)

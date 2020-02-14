@@ -1,10 +1,8 @@
-#《大象席地而坐》《路边野餐》《过春天》《地久天长》《山河故人》《白日焰火》《树先生》《百鸟朝凤》《八月》
-
 from emulator import Emulator
 import random
 import numpy as np
 import matplotlib.pyplot as plt
-def creat_network(row, max_bw):
+def creat_network(row, max_bw, idx):
     trace_list = []
     for i in range(row):
         tmp = []
@@ -13,7 +11,7 @@ def creat_network(row, max_bw):
         tmp.append(random.random())
         trace_list.append(tmp)
 
-    with open("config/traces.txt", "w+") as f:
+    with open("scripts/second_group/traces_"+ str(idx) + ".txt", "w+") as f:
         for i in range(len(trace_list)):
             for j in range(2):
                 f.write(str(trace_list[i][j]))
@@ -22,20 +20,20 @@ def creat_network(row, max_bw):
             f.write('\n')
 
 
-def main(times):
+def main(times, row, max_bw, flag=0):
     first_qoe = []
     second_qoe = []
-    for _ in range(times):
-        creat_network(row=10, max_bw=100)
+    for idx in range(times):
+        creat_network(row=row, max_bw=max_bw, idx=idx + 1)
         block_file = "config/block.txt"
-        trace_file = "config/traces.txt"
+        trace_file = "scripts/second_group/traces_"+ str(idx + 1) + ".txt"
 
         emulator0 = Emulator(block_file=block_file,
                             trace_file=trace_file,
                             det=1,
                             tag=0)
         emulator0.run(times=1)
-        qoe0 = emulator0.cal_QOE()
+        qoe0 = emulator0.cal_QOE(flag=flag)
         first_qoe.append(qoe0)
 
         emulator1 = Emulator(block_file=block_file,
@@ -43,12 +41,12 @@ def main(times):
                             det=1,
                             tag=1)
         emulator1.run(times=1)
-        qoe1 = emulator1.cal_QOE()
+        qoe1 = emulator1.cal_QOE(flag=flag)
         second_qoe.append(qoe1)
 
     data = np.array([first_qoe, second_qoe])
     data = data.T
-    np.savetxt("scripts/network.log", data,fmt="%d", delimiter=',')
+    np.savetxt("scripts/second_group/network.log", data,fmt="%.8f", delimiter=',')
     return first_qoe,second_qoe
 
 
@@ -62,12 +60,18 @@ def drawing(times, first_qoe, second_qoe):
     ax.set_xlabel("times")
     ax.set_ylabel("qoe")
     ax.legend()
-    plt.savefig("scripts/network-drawing.png")
+    plt.savefig("scripts/second_group/network-drawing.png")
 
 
 if __name__ == '__main__':
     times = 100
-    first_qoe, second_qoe = main(times)
+    #row and max_bw are used to create network
+    row = 10
+    max_bw = 100
+
+    # flag used to cal QOE in different ways
+    flag = 0
+    first_qoe, second_qoe = main(times, row, max_bw, flag)
     drawing(times, first_qoe, second_qoe)
 
 
