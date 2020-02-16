@@ -6,7 +6,7 @@
  
 - 在新的qoe计算公式下，对比两种算法的表现：
   - 新的qoe1 = 1 * block_a + 1 * block_b + 1 * block_c
-  - 新的qoe2 = sum((now_time - block.timestamp) / block.deadline) 
+  - 新的qoe2 = sum((block_finish_time - block.timestamp) / block.deadline) 
    (qoe越大的话表现的反而不好)
   - 将产生的结果差距大的一组情况的trace 和 qoe 的 log 保存起来。
   
