@@ -12,8 +12,7 @@
 from utils import (
         Block, get_ms_time, lower_bound
     )
-import random, json, time
-
+import random, json, time, os
 
 class Emulator(object):
 
@@ -51,7 +50,7 @@ class Emulator(object):
         self.block_circle = -1
         self.det = det
 
-        # used to choose block
+        # used to choose block in different ways
         self.tag = tag
 
         if self.trace_file:
@@ -180,6 +179,7 @@ class Emulator(object):
 
         while not best_block:
             queue_size = sum(map(lambda x:len(x), self.cal_queue))
+            print(queue_size)
             if queue_size == 0:
                 break
 
@@ -189,7 +189,8 @@ class Emulator(object):
 
                 # if miss ddl in queue, clean and log
                 if self.init_time + self.pass_time > \
-                        self.cal_queue[idx][0].timestamp + self.cal_queue[idx][0].deadline:
+                        self.cal_queue[idx][0].timestamp + \
+                        self.cal_queue[idx][0].deadline:
                     self.cal_queue[idx][0].miss_ddl = 1
                     self.log_block(self.cal_queue[idx][0])
                     self.cal_queue[idx].pop(0)
@@ -227,9 +228,8 @@ class Emulator(object):
                     QOE.append(int(data[idx]['priority']) + 1)
                 else:
                     QOE.append(0)
-        print(QOE)
         QOE = sum(QOE)
-        print(QOE)
+        # print(QOE)
         return QOE
 
     def get_trace(self):
@@ -329,6 +329,53 @@ class Emulator(object):
         plt.legend(fontsize=20)
         plt.savefig("output/emulator-analysis.png")
 
+    # calculate all possible situations
+    def permute(self, blocks):
+        res = []
+        self.dfs(blocks, [], res)
+        return res
+
+    def dfs(self, blocks, path, res):
+        if not blocks:
+            res.append(path)
+        for i in range(len(blocks)):
+            self.dfs(blocks[:i] + blocks[i + 1:], path + [blocks[i]], res)
+
+
+    def brute_run(self):
+
+        blocks = []
+        permutations = []
+        qoes = []
+
+        if self.block_file:
+            self.update_queue(det=self.det)
+
+        for idx in range(3):
+            for block in self.cal_queue[idx]:
+                blocks.append(block)
+        print(len(blocks))
+
+        permutations[:] = self.permute(blocks)
+        print(len(permutations))
+
+        for value in permutations:
+            while value:
+                send_block = value.pop(0)
+                self.pass_time = max(self.pass_time, send_block.timestamp)
+                send_block = self.cal_block(send_block)
+                self.log_block(send_block)
+            qoe = self.cal_QOE()
+            print(qoe)
+            qoes.append(qoe)
+            self.init_time = 0
+            self.pass_time = .0
+            with open("output/emulator.log", "r+") as f:
+                f.truncate()
+
+        return qoes
+
+
 
 if __name__ == '__main__':
 
@@ -339,6 +386,20 @@ if __name__ == '__main__':
                         trace_file=trace_file,
                         det=1,
                         tag=0)
-    emulator.run(times=1)
-    emulator.cal_QOE()
-    emulator.analysis(rows=1000)
+    # emulator.run(times=1)
+    # qoe = emulator.cal_QOE()
+    # print(qoe)
+    # emulator.analysis(rows=1000)
+
+    start_time = time.time()
+
+    qoes = emulator.brute_run()
+    min_qoe = min(qoes)
+    print(qoes)
+    print(min_qoe)
+    end_time = time.time()
+    print(end_time - start_time)
+    with open("output/brute_run.log", "a") as f:
+        f.write(str(qoes) + "\n")
+        f.write(str(min_qoe) + "\n")
+        f.write(str(end_time - start_time) + "\n")
