@@ -74,4 +74,48 @@
 - 多径的话需要有各个链路的信息
 
 
+# Emulator version 2.0
+
+## Node
+
+### Host
+
+#### Variable
+
+- packege queue
+- link rate and surround host or router 
+- host information (time, bandwith, lossrate)
+
+#### Function
+
+- run_stop
+
+### Router (base=Host)
+
+#### Variable
+
+#### Function
+
+- nat_transfer
+- nat_retransfer
+
+
+## Emulator
+
+#### Variable
+
+
+### Function
+
+- create_network
+- get_topo_list
+- run_stop (stop_time=-1)
+
+only run emulator for "stop_time" ms.
+It will run consistently if "stop_time" equal -1.
+
+- log block
+- analysis
+
+
 
