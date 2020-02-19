@@ -12,7 +12,9 @@
 from utils import (
         Block, get_ms_time, lower_bound
     )
-import random, json, time, os
+import random, json, time, os, shutil
+
+import itertools
 
 class Emulator(object):
 
@@ -153,7 +155,7 @@ class Emulator(object):
 
         return block
 
-
+    # 在select_block中产生6个仿真器
     def select_block(self):
         def first_better(block):
             return (now_time - block.timestamp) * best_block.deadline > \
@@ -216,6 +218,7 @@ class Emulator(object):
 
         for idx in range(len(data)):
             if flag == 0:
+                # miss_ddl 应该考虑的，产生加的影响
                 QOE.append((data[idx]['finish_timestamp'] -
                             data[idx]['timestamp']) / data[idx]['deadline'])
             elif flag == 1:
@@ -329,52 +332,56 @@ class Emulator(object):
         plt.legend(fontsize=20)
         plt.savefig("output/emulator-analysis.png")
 
-    # calculate all possible situations
-    def permute(self, blocks):
-        res = []
-        self.dfs(blocks, [], res)
-        return res
 
-    def dfs(self, blocks, path, res):
-        if not blocks:
-            res.append(path)
-        for i in range(len(blocks)):
-            self.dfs(blocks[:i] + blocks[i + 1:], path + [blocks[i]], res)
-
+    def init_log(self):
+        self.init_time = 0
+        self.pass_time = .0
+        with open("output/emulator.log", "r+") as f:
+            f.truncate()
 
     def brute_run(self):
-
         blocks = []
         permutations = []
-        qoes = []
+        qoe = 0
+        min_qoe = float("inf")
 
         if self.block_file:
             self.update_queue(det=self.det)
-
         for idx in range(3):
             for block in self.cal_queue[idx]:
                 blocks.append(block)
-        print(len(blocks))
-
-        permutations[:] = self.permute(blocks)
+        permutations[:] = map(list, itertools.permutations(blocks))
         print(len(permutations))
 
-        for value in permutations:
-            while value:
-                send_block = value.pop(0)
+        for permutation in permutations:
+            while permutation:
+                send_block = permutation.pop(0)
                 self.pass_time = max(self.pass_time, send_block.timestamp)
                 send_block = self.cal_block(send_block)
                 self.log_block(send_block)
-            qoe = self.cal_QOE()
-            print(qoe)
-            qoes.append(qoe)
-            self.init_time = 0
-            self.pass_time = .0
-            with open("output/emulator.log", "r+") as f:
-                f.truncate()
+                qoe += (send_block.finish_timestamp - send_block.timestamp) / \
+                       send_block.deadline
 
-        return qoes
+                if qoe > min_qoe:
+                    self.init_log()
+                    qoe = 0
+                    break
 
+                if not permutation:
+                    if qoe < min_qoe:
+                        min_qoe = qoe
+                        print(min_qoe)
+                        source = "output/emulator.log"
+                        target = "output/min_emulator.log"
+                        shutil.copy(source, target)
+                        source = "output/emulator-analysis.png"
+                        target = "output/min_emulator-analysis.png"
+                        shutil.copy(source, target)
+
+                    self.init_log()
+                    qoe = 0
+
+        return min_qoe
 
 
 if __name__ == '__main__':
@@ -392,14 +399,9 @@ if __name__ == '__main__':
     # emulator.analysis(rows=1000)
 
     start_time = time.time()
-
-    qoes = emulator.brute_run()
-    min_qoe = min(qoes)
-    print(qoes)
-    print(min_qoe)
+    min_qoe = emulator.brute_run()
     end_time = time.time()
     print(end_time - start_time)
     with open("output/brute_run.log", "a") as f:
-        f.write(str(qoes) + "\n")
         f.write(str(min_qoe) + "\n")
         f.write(str(end_time - start_time) + "\n")
