@@ -27,11 +27,6 @@ class Emulator(object):
         self.a_queue, self.b_queue, self.c_queue = [], [], []
         # use shallow copy
         self.cal_queue = [self.a_queue, self.b_queue, self.c_queue]
-        # not used
-        self.s_wnd=1500
-        self.r_wnd=1500
-        self.c_wnd=1500
-        self.loss_rate = .0
 
         self.block_file = block_file
         self.trace_file = trace_file
@@ -295,7 +290,7 @@ if __name__ == '__main__':
 
     emulator = Emulator(block_file=block_file,
                         trace_file=trace_file,
-                        det=1)
+                        det=10)
 
     emulator.run(times=1)
     emulator.analysis(rows=1000)
