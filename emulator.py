@@ -12,7 +12,7 @@
 from utils import (
         Block, get_ms_time, lower_bound
     )
-import random, json, time, os, shutil
+import random, json, time, os, shutil, copy
 
 import itertools
 
@@ -234,7 +234,9 @@ class Emulator(object):
         QOE = sum(QOE)
         # print(QOE)
         return QOE
-
+    # 记录前缀的所有时间，从某一个前缀往下走
+    # 在blocks里面还需要剪，qoe已经大了就不走了
+    # 记录后面的blocks
     def get_trace(self):
 
         trace_list = []
@@ -343,48 +345,46 @@ class Emulator(object):
         blocks = []
         qoe = 0
         min_qoe = float("inf")
-
+        curr_blocks = []
+        min_blocks = []
         if self.block_file:
             self.update_queue(det=self.det)
         for idx in range(3):
             for block in self.cal_queue[idx]:
                 blocks.append(block)
+
         permutations = itertools.permutations(blocks)
+
         for permutation in permutations:
             permutation = list(permutation)
             while permutation:
                 send_block = permutation.pop(0)
                 self.pass_time = max(self.pass_time, send_block.timestamp)
                 send_block = self.cal_block(send_block)
-                self.log_block(send_block)
+                send_block.finish_timestamp = self.init_time + self.pass_time
+                if send_block.get_cost_time() > send_block.deadline:
+                    send_block.miss_ddl = 1
+                curr_blocks.append(send_block)
 
                 qoe += (send_block.finish_timestamp - send_block.timestamp) / \
                        send_block.deadline
-                #方案一： 计算后面的最优qoe如果大于当前qoe,也要减，后面的qoe如何快速计算
-                #方案二： 不产生所有情况，出现大于min_qoe的情况，对后面之前相同的前缀次序一并剪枝。
-                       # 判断是否满度和之前具有相同前缀
-                       # 不生成排列的方案
+
                 if qoe > min_qoe:
                     self.init_log()
                     qoe = 0
+                    curr_blocks[:] = []
                     break
 
                 if not permutation:
                     if qoe < min_qoe:
                         min_qoe = qoe
-                        print(min_qoe)
-
-                        source = "output/emulator.log"
-                        target = "output/min_emulator.log"
-                        shutil.copy(source, target)
-                        source = "output/emulator-analysis.png"
-                        target = "output/min_emulator-analysis.png"
-                        shutil.copy(source, target)
+                        min_blocks[:] = curr_blocks[:]
 
                     self.init_log()
                     qoe = 0
+                    curr_blocks[:] = []
 
-        return min_qoe
+        return min_qoe, min_blocks
 
     def brute_run2(self):
         pruning = []
@@ -410,10 +410,10 @@ if __name__ == '__main__':
     block_file = "config/block.txt"
     trace_file = "config/trace.txt"
 
-    # 200 kb / 10ms  创建block的速度
+    # 200 kb / 100ms  创建block的速度
     emulator = Emulator(block_file=block_file,
                         trace_file=trace_file,
-                        det=10,
+                        det=100,
                         tag=0)
     # emulator.run(times=1)
     # qoe = emulator.cal_QOE()7
@@ -421,9 +421,12 @@ if __name__ == '__main__':
     # emulator.analysis(rows=1000)
 
     start_time = time.time()
-    min_qoe = emulator.brute_run()
+    min_qoe, min_blocks = emulator.brute_run()
     end_time = time.time()
     print(end_time - start_time)
-    with open("output/brute_run.log", "a") as f:
+    with open("output/brute_run.log", "w") as f:
+        for block in min_blocks:
+            f.write(str(block) + "\n")
+    with open("output/brute_run.log", "w") as f:
         f.write(str(min_qoe) + "\n")
         f.write(str(end_time - start_time) + "\n")
