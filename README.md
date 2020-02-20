@@ -74,7 +74,13 @@
 - 多径的话需要有各个链路的信息
 
 
-# Emulator version 2.0
+# Emulator version 2.0 (deployment... ...)
+
+## Link
+
+#### Variable
+
+#### Function
 
 ## Node
 
@@ -109,10 +115,18 @@
 
 - create_network
 - get_topo_list
+
+get the execute order of node according to network architecture 
+and blocks information in node
+
 - run_stop (stop_time=-1)
 
 only run emulator for "stop_time" ms.
 It will run consistently if "stop_time" equal -1.
+
+- adjust_nodes
+
+push blocks in the node to next node
 
 - log block
 - analysis

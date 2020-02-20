@@ -9,9 +9,11 @@
 '''
 
 
-from utils import (
-        Block, Node
-    )
+
+from objects.block import Block
+from objects.link import Link
+from objects.node import Node
+from utils import Graph
 import random, json, time
 
 
@@ -22,6 +24,7 @@ class Emulator(object):
                  link_list=None,
                  block_file=None,
                  trace_file=None,
+                 network_file=None,
                  det=0):
 
         self.block_file = block_file
@@ -48,12 +51,41 @@ class Emulator(object):
 
         # version 2.0
         self.fir_run = True
-        self.network = self.create_network()
+        self.network = self.create_network(network_file, trace_file)
         self.topo_list = self.get_topo_list()
 
 
-    def create_network(self):
-        pass
+    def create_network(self, network_file, trace_file):
+
+        node_list = []
+        link_list = []
+
+        with open(network_file, 'r') as f:
+            node_num, link_num = list(map(
+                lambda x:int(x), f.readline().split(',')
+            ))
+
+            # create node
+            for i in range(node_num):
+                node_list.append(Node(
+
+                ))
+
+            # create link
+            for i in range(link_num):
+                link_list.append(Link(
+
+                ))
+
+            # connect node and link
+            for i in range(link_num):
+                st, ed, lk = list(map(
+                    lambda x:int(x), f.readline().split(',')
+                ))
+                node_list[st].append_link(link_list[lk])
+                node_list[ed].append_link(link_list[lk])
+
+        return Graph(node_list, link_list)
 
 
     def get_topo_list(self):
