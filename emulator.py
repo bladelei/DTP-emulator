@@ -341,7 +341,6 @@ class Emulator(object):
 
     def brute_run(self):
         blocks = []
-        permutations = []
         qoe = 0
         min_qoe = float("inf")
 
@@ -350,18 +349,21 @@ class Emulator(object):
         for idx in range(3):
             for block in self.cal_queue[idx]:
                 blocks.append(block)
-        permutations[:] = map(list, itertools.permutations(blocks))
-        print(len(permutations))
-
+        permutations = itertools.permutations(blocks)
         for permutation in permutations:
+            permutation = list(permutation)
             while permutation:
                 send_block = permutation.pop(0)
                 self.pass_time = max(self.pass_time, send_block.timestamp)
                 send_block = self.cal_block(send_block)
                 self.log_block(send_block)
+
                 qoe += (send_block.finish_timestamp - send_block.timestamp) / \
                        send_block.deadline
-
+                #方案一： 计算后面的最优qoe如果大于当前qoe,也要减，后面的qoe如何快速计算
+                #方案二： 不产生所有情况，出现大于min_qoe的情况，对后面之前相同的前缀次序一并剪枝。
+                       # 判断是否满度和之前具有相同前缀
+                       # 不生成排列的方案
                 if qoe > min_qoe:
                     self.init_log()
                     qoe = 0
@@ -371,6 +373,7 @@ class Emulator(object):
                     if qoe < min_qoe:
                         min_qoe = qoe
                         print(min_qoe)
+
                         source = "output/emulator.log"
                         target = "output/min_emulator.log"
                         shutil.copy(source, target)
@@ -383,18 +386,37 @@ class Emulator(object):
 
         return min_qoe
 
+    def brute_run2(self):
+        pruning = []
+        blocks = []
+        if self.block_file:
+            self.update_queue(det=self.det)
+        for idx in range(3):
+            for block in self.cal_queue[idx]:
+                blocks.append(block)
+        perms = [[]]
+        for n in blocks:
+            new_perms = []
+            for perm in perms:
+                for i in range(len(perm) + 1):
+                    tmp = perm[:i] + [n] + perm[i:]
+                    new_perms.append(tmp)  ###insert n
+            perms = new_perms
+        return perms
+
 
 if __name__ == '__main__':
 
     block_file = "config/block.txt"
     trace_file = "config/trace.txt"
 
+    # 200 kb / 10ms  创建block的速度
     emulator = Emulator(block_file=block_file,
                         trace_file=trace_file,
-                        det=1,
+                        det=10,
                         tag=0)
     # emulator.run(times=1)
-    # qoe = emulator.cal_QOE()
+    # qoe = emulator.cal_QOE()7
     # print(qoe)
     # emulator.analysis(rows=1000)
 
