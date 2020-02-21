@@ -104,12 +104,15 @@ class Network():
         self.links = links
         self.queue_initial_packets()
 
+        self.fir_log = True
+        self.log_package_file = "output/pcc_emulator_package.log"
+
 
     def queue_initial_packets(self):
         for sender in self.senders:
             sender.register_network(self)
             sender.reset_obs()
-            heapq.heappush(self.q, (1.0 / sender.rate, sender, EVENT_TYPE_SEND, 0, 0.0, False))
+            heapq.heappush(self.q, (1.0 / sender.rate, sender, EVENT_TYPE_SEND, 0, 0.0, False, sender._get_next_package()))
 
 
     def reset(self):
@@ -130,7 +133,7 @@ class Network():
             sender.reset_obs()
 
         while self.cur_time < end_time:
-            event_time, sender, event_type, next_hop, cur_latency, dropped = heapq.heappop(self.q)
+            event_time, sender, event_type, next_hop, cur_latency, dropped, package_id = self.log_package(heapq.heappop(self.q))
             # print("Got event %s, to link %d, latency %f at time %f" % (event_type, next_hop, cur_latency, event_time))
             self.cur_time = event_time
             new_event_time = event_time
@@ -141,6 +144,7 @@ class Network():
             push_new_event = False
 
             if event_type == EVENT_TYPE_ACK:
+                # got ack in source or destination
                 if next_hop == len(sender.path):
                     if dropped:
                         sender.on_packet_lost()
@@ -148,6 +152,7 @@ class Network():
                     else:
                         sender.on_packet_acked(cur_latency)
                         # print("Packet acked at time %f" % self.cur_time)
+                # ack back to source
                 else:
                     new_next_hop = next_hop + 1
                     link_latency = sender.path[next_hop].get_cur_latency(self.cur_time)
@@ -162,7 +167,7 @@ class Network():
                     if sender.can_send_packet():
                         sender.on_packet_sent()
                         push_new_event = True
-                    heapq.heappush(self.q, (self.cur_time + (1.0 / sender.rate), sender, EVENT_TYPE_SEND, 0, 0.0, False))
+                    heapq.heappush(self.q, (self.cur_time + (1.0 / sender.rate), sender, EVENT_TYPE_SEND, 0, 0.0, False, sender._get_next_package()))
 
                 else:
                     push_new_event = True
@@ -179,7 +184,7 @@ class Network():
                 new_dropped = not sender.path[next_hop].packet_enters_link(self.cur_time)
 
             if push_new_event:
-                heapq.heappush(self.q, (new_event_time, sender, new_event_type, new_next_hop, new_latency, new_dropped))
+                heapq.heappush(self.q, (new_event_time, sender, new_event_type, new_next_hop, new_latency, new_dropped, package_id))
 
         sender_mi = self.senders[0].get_run_data()
         throughput = sender_mi.get("recv rate")
@@ -209,6 +214,33 @@ class Network():
         return reward * REWARD_SCALE
 
 
+    def log_package(self, package):
+        '''
+        package is tuple of (event_time, sender, event_type, next_hop, cur_latency, dropped, package_id)
+        :param package: tuple
+        :return: package
+        '''
+
+        if self.fir_log:
+            self.fir_log = False
+            with open(self.log_package_file, "w") as f:
+                pass
+
+        log_data = {
+            "Time" : package[0],
+            "Type" : package[2],
+            "Position" : package[3],
+            "Latency" : package[4],
+            "Drop" : package[5],
+            "Package_id" : package[6]
+        }
+        with open(self.log_package_file, "a") as f:
+
+            f.write(str(log_data)+"\n")
+
+        return package
+
+
 class Sender():
 
     def __init__(self, rate, path, dest, features, cwnd=25, history_len=10):
@@ -233,6 +265,13 @@ class Sender():
 
 
     _next_id = 1
+    _package_id = 1
+
+    @classmethod
+    def _get_next_package(cls):
+        result = Sender._package_id
+        Sender._package_id += 1
+        return result
 
     @classmethod
     def _get_next_id(cls):
@@ -513,3 +552,4 @@ if __name__ == '__main__':
     print(emulator.run_for_dur(2))
     emulator.dump_events_to_file("output/pcc_emulator.log")
     emulator.print_debug()
+    print(emulator.senders[0].rtt_samples)
