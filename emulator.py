@@ -361,6 +361,7 @@ class Emulator(object):
                 send_block = permutation.pop(0)
                 self.pass_time = max(self.pass_time, send_block.timestamp)
                 send_block = self.cal_block(send_block)
+
                 send_block.finish_timestamp = self.init_time + self.pass_time
                 if send_block.get_cost_time() > send_block.deadline:
                     send_block.miss_ddl = 1
@@ -386,23 +387,40 @@ class Emulator(object):
 
         return min_qoe, min_blocks
 
-    def brute_run2(self):
-        pruning = []
-        blocks = []
-        if self.block_file:
-            self.update_queue(det=self.det)
-        for idx in range(3):
-            for block in self.cal_queue[idx]:
-                blocks.append(block)
-        perms = [[]]
-        for n in blocks:
-            new_perms = []
-            for perm in perms:
-                for i in range(len(perm) + 1):
-                    tmp = perm[:i] + [n] + perm[i:]
-                    new_perms.append(tmp)  ###insert n
-            perms = new_perms
-        return perms
+    def permute(self, blocks):
+        res = []
+        self.dfs(blocks, [], res)
+        return res
+
+    # def sum_qoe(self, path):
+    #     pass
+    # def dfs(self, blocks, path, curr_time, min_qoe,pre_time, min_blocks):
+    #     if not blocks:
+    #         curr_qoe = self.sum_qoe(path)
+    #         if curr_qoe < min_qoe:
+    #             min_qoe = curr_qoe
+    #             min_blocks = path
+    #
+    #     for i in range(len(blocks)):
+    #         pre_time = curr_time
+    #         order = path + [blocks[i]]
+    #         curr_time = self.pass_time
+    #         if self.sum_qoe(order) > min_qoe:
+    #             curr_time = pre_time
+    #             break
+    #         self.dfs(blocks[:i] + blocks[i + 1:],
+    #                  order, curr_time, pre_time, min_qoe, min_blocks)
+    #
+    #
+    # def brute_run2(self):
+    #     pruning = []
+    #     blocks = []
+    #     if self.block_file:
+    #         self.update_queue(det=self.det)
+    #     for idx in range(3):
+    #         for block in self.cal_queue[idx]:
+    #             blocks.append(block)
+
 
 
 if __name__ == '__main__':
@@ -410,13 +428,13 @@ if __name__ == '__main__':
     block_file = "config/block.txt"
     trace_file = "config/trace.txt"
 
-    # 200 kb / 100ms  创建block的速度
+    # 200 kB / 100ms  创建block的速度
     emulator = Emulator(block_file=block_file,
                         trace_file=trace_file,
-                        det=100,
+                        det=10,
                         tag=0)
     # emulator.run(times=1)
-    # qoe = emulator.cal_QOE()7
+    # qoe = emulator.cal_QOE()
     # print(qoe)
     # emulator.analysis(rows=1000)
 
@@ -424,9 +442,10 @@ if __name__ == '__main__':
     min_qoe, min_blocks = emulator.brute_run()
     end_time = time.time()
     print(end_time - start_time)
-    with open("output/brute_run.log", "w") as f:
+    with open("output/emulator.log", "w") as f:
         for block in min_blocks:
             f.write(str(block) + "\n")
     with open("output/brute_run.log", "w") as f:
         f.write(str(min_qoe) + "\n")
         f.write(str(end_time - start_time) + "\n")
+    emulator.analysis()
