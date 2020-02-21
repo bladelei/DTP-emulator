@@ -11,6 +11,7 @@ currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentfram
 parentdir = os.path.dirname(currentdir)
 sys.path.insert(0, parentdir)
 from common import sender_obs
+from utils import analyze_pcc_emulator, Block, Package
 
 DELTA_SCALE = 0.9
 
@@ -36,6 +37,10 @@ MAX_LATENCY_NOISE = 1.1
 USE_CWND = False
 
 
+BLOCK_SIZE = 15000
+PACKAGE_NUM = int(np.ceil(BLOCK_SIZE / BYTES_PER_PACKET))
+
+
 class Link():
 
     def __init__(self, trace_list, queue_size):
@@ -49,13 +54,16 @@ class Link():
             self.lr = .0
             self.dl = .0
         else:
-            self.bw = trace_list[0][1]
+            self.bw = trace_list[0][1] * 10**6 / BYTES_PER_PACKET
             self.lr = trace_list[0][2]
             self.dl = trace_list[0][3]
 
         self.queue_delay = 0.0
         self.queue_delay_update_time = 0.0
         self.max_queue_delay = queue_size / self.bw
+
+        self.extra_delay = 0
+        self.queue_size = queue_size
 
 
     def get_cur_queue_delay(self, event_time):
@@ -71,14 +79,51 @@ class Link():
             return False
         self.queue_delay = self.get_cur_queue_delay(event_time)
         self.queue_delay_update_time = event_time
-        extra_delay = 1.0 / self.bw
+        self.extra_delay = self.send_delay(event_time) # 1.0 / self.bw
         # print("Extra delay: %f, Current delay: %f, Max delay: %f" % (extra_delay, self.queue_delay, self.max_queue_delay))
-        if extra_delay + self.queue_delay > self.max_queue_delay:
+        if self.extra_delay + self.queue_delay > self.max_queue_delay:
             # print("\tDrop!")
             return False
-        self.queue_delay += extra_delay
+        self.queue_delay += self.extra_delay
         # print("\tNew delay = %f" % self.queue_delay)
         return True
+
+
+    def update_trace(self, event_time):
+
+        while len(self.trace_list) > 0 and \
+                event_time > self.trace_list[0][0]:
+            self.trace_list.pop(0)
+
+
+    def send_delay(self, event_time):
+
+        rest_block_size = 1
+        transmition_ms = 0
+        # different bw
+        for i in range(len(self.trace_list)):
+            if rest_block_size <= 0:
+                break
+            if event_time + transmition_ms > self.trace_list[i][0]:
+                continue
+
+            used_time = rest_block_size / self.bw
+            tmp = self.trace_list[i][0] - (event_time + transmition_ms)
+            if used_time > tmp:
+                used_time = tmp
+                rest_block_size -= used_time * self.bw
+                self.bw = self.trace_list[i][1] * 10 ** 6 / BYTES_PER_PACKET
+            else:
+                rest_block_size = 0
+            transmition_ms += used_time
+
+        if rest_block_size > 0:
+            transmition_ms += rest_block_size / self.bw
+            self.update_trace(event_time+transmition_ms)
+
+        self.max_queue_delay = self.queue_size / self.bw
+
+        return transmition_ms
 
 
     def print_debug(self):
@@ -112,7 +157,9 @@ class Network():
         for sender in self.senders:
             sender.register_network(self)
             sender.reset_obs()
-            heapq.heappush(self.q, (1.0 / sender.rate, sender, EVENT_TYPE_SEND, 0, 0.0, False, sender._get_next_package()))
+            package = sender.new_block(1.0 / sender.rate)
+            package.send_delay = 1.0 / sender.rate
+            heapq.heappush(self.q, (1.0 / sender.rate, sender, package))
 
 
     def reset(self):
@@ -133,7 +180,10 @@ class Network():
             sender.reset_obs()
 
         while self.cur_time < end_time:
-            event_time, sender, event_type, next_hop, cur_latency, dropped, package_id = self.log_package(heapq.heappop(self.q))
+            event_time, sender, package = heapq.heappop(self.q)
+            self.log_package(package)
+
+            event_type, next_hop, cur_latency, dropped, life, package_id = package.parse()
             # print("Got event %s, to link %d, latency %f at time %f" % (event_type, next_hop, cur_latency, event_time))
             self.cur_time = event_time
             new_event_time = event_time
@@ -167,7 +217,9 @@ class Network():
                     if sender.can_send_packet():
                         sender.on_packet_sent()
                         push_new_event = True
-                    heapq.heappush(self.q, (self.cur_time + (1.0 / sender.rate), sender, EVENT_TYPE_SEND, 0, 0.0, False, sender._get_next_package()))
+                    _package = sender.new_block(self.cur_time + (1.0 / sender.rate))
+                    _package.send_delay = 1.0 / sender.rate
+                    heapq.heappush(self.q, (self.cur_time + (1.0 / sender.rate), sender, _package))
 
                 else:
                     push_new_event = True
@@ -182,9 +234,19 @@ class Network():
                 new_latency += link_latency
                 new_event_time += link_latency
                 new_dropped = not sender.path[next_hop].packet_enters_link(self.cur_time)
+                life += link_latency + sender.path[next_hop].extra_delay
 
             if push_new_event:
-                heapq.heappush(self.q, (new_event_time, sender, new_event_type, new_next_hop, new_latency, new_dropped, package_id))
+                _package = Package(create_time=new_event_time,
+                                   next_hop=new_next_hop,
+                                   block_id=package_id // PACKAGE_NUM,
+                                   package_id=package_id % PACKAGE_NUM,
+                                   package_type=new_event_type,
+                                   queue_delay=new_latency,
+                                   send_delay=package.send_delay,
+                                   drop=new_dropped
+                                   )
+                heapq.heappush(self.q, (new_event_time, sender, _package))
 
         sender_mi = self.senders[0].get_run_data()
         throughput = sender_mi.get("recv rate")
@@ -216,7 +278,7 @@ class Network():
 
     def log_package(self, package):
         '''
-        package is tuple of (event_time, sender, event_type, next_hop, cur_latency, dropped, package_id)
+        package is tuple of (event_time, sender, event_type, next_hop, cur_latency, dropped, package_id, life)
         :param package: tuple
         :return: package
         '''
@@ -226,17 +288,9 @@ class Network():
             with open(self.log_package_file, "w") as f:
                 pass
 
-        log_data = {
-            "Time" : package[0],
-            "Type" : package[2],
-            "Position" : package[3],
-            "Latency" : package[4],
-            "Drop" : package[5],
-            "Package_id" : package[6]
-        }
         with open(self.log_package_file, "a") as f:
 
-            f.write(str(log_data)+"\n")
+            f.write(str(package)+"\n")
 
         return package
 
@@ -266,6 +320,7 @@ class Sender():
 
     _next_id = 1
     _package_id = 1
+    _block_id = 1
 
     @classmethod
     def _get_next_package(cls):
@@ -273,11 +328,22 @@ class Sender():
         Sender._package_id += 1
         return result
 
+
     @classmethod
     def _get_next_id(cls):
         result = Sender._next_id
         Sender._next_id += 1
         return result
+
+
+    def new_block(self, cur_time):
+        package_id = Sender._get_next_package()
+        package = Package(create_time=1.0 / self.rate,
+                          next_hop=0,
+                          block_id=package_id // PACKAGE_NUM,
+                          package_id=package_id % PACKAGE_NUM,
+                          )
+        return package
 
 
     def apply_rate_delta(self, delta):
@@ -450,14 +516,14 @@ class PccEmulator(object):
         # queue = 1 + int(np.exp(random.uniform(*self.queue_range)))
         # print("queue size : %d" % queue)
         # bw = self.trace_list[0][1]
-        bw    = 200
+        bw    = 7050 # true bw is bw*BYTES_PER_PACKAGE
         lat   = 0.03
         queue = 5
         loss  = 0.00
         self.links = [Link(self.trace_list, queue)] # , Link(self.trace_list, queue)]
         #self.senders = [Sender(0.3 * bw, [self.links[0], self.links[1]], 0, self.history_len)]
         #self.senders = [Sender(random.uniform(0.2, 0.7) * bw, [self.links[0], self.links[1]], 0, self.history_len)]
-        self.senders = [Sender(random.uniform(0.9, 1.) * bw, [self.links[0]], 0, self.features, history_len=self.history_len)]
+        self.senders = [Sender(random.uniform(0.9, 1) * bw, [self.links[0]], 0, self.features, history_len=self.history_len)]
 
 
     def run_for_dur(self, during_time):
@@ -544,12 +610,15 @@ if __name__ == '__main__':
 
     block_file = "config/block.txt"
     trace_file = "config/trace.txt"
+    log_file = "output/pcc_emulator.log"
+    log_package_file = "output/pcc_emulator_package.log"
 
     emulator = PccEmulator(
         block_file=block_file,
         trace_file=trace_file
     )
-    print(emulator.run_for_dur(2))
-    emulator.dump_events_to_file("output/pcc_emulator.log")
+    print(emulator.run_for_dur(0.5))
+    emulator.dump_events_to_file(log_file)
     emulator.print_debug()
     print(emulator.senders[0].rtt_samples)
+    # analyze_pcc_emulator(log_package_file, trace_file)
