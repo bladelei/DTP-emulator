@@ -34,7 +34,7 @@ LOSS_PENALTY = 1.0
 USE_LATENCY_NOISE = False
 MAX_LATENCY_NOISE = 1.1
 
-USE_CWND = False
+USE_CWND = True
 
 
 BLOCK_SIZE = 15000
@@ -158,7 +158,6 @@ class Network():
             sender.register_network(self)
             sender.reset_obs()
             package = sender.new_block(1.0 / sender.rate)
-            package.send_delay = 1.0 / sender.rate
             heapq.heappush(self.q, (1.0 / sender.rate, sender, package))
 
 
@@ -218,7 +217,6 @@ class Network():
                         sender.on_packet_sent()
                         push_new_event = True
                     _package = sender.new_block(self.cur_time + (1.0 / sender.rate))
-                    _package.send_delay = 1.0 / sender.rate
                     heapq.heappush(self.q, (self.cur_time + (1.0 / sender.rate), sender, _package))
 
                 else:
@@ -338,10 +336,11 @@ class Sender():
 
     def new_block(self, cur_time):
         package_id = Sender._get_next_package()
-        package = Package(create_time=1.0 / self.rate,
+        package = Package(create_time=cur_time,
                           next_hop=0,
                           block_id=package_id // PACKAGE_NUM,
                           package_id=package_id % PACKAGE_NUM,
+                          send_delay=1 / self.rate
                           )
         return package
 
@@ -516,14 +515,15 @@ class PccEmulator(object):
         # queue = 1 + int(np.exp(random.uniform(*self.queue_range)))
         # print("queue size : %d" % queue)
         # bw = self.trace_list[0][1]
-        bw    = 7050 # true bw is bw*BYTES_PER_PACKAGE
+        bw    = 705 # true bw is bw*BYTES_PER_PACKAGE
         lat   = 0.03
         queue = 5
         loss  = 0.00
         self.links = [Link(self.trace_list, queue)] # , Link(self.trace_list, queue)]
         #self.senders = [Sender(0.3 * bw, [self.links[0], self.links[1]], 0, self.history_len)]
         #self.senders = [Sender(random.uniform(0.2, 0.7) * bw, [self.links[0], self.links[1]], 0, self.history_len)]
-        self.senders = [Sender(random.uniform(0.9, 1) * bw, [self.links[0]], 0, self.features, history_len=self.history_len)]
+        self.senders = [Sender(random.uniform(0.99, 1) * bw, [self.links[0]],
+                               0, self.features, history_len=self.history_len, cwnd=25)]
 
 
     def run_for_dur(self, during_time):

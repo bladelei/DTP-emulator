@@ -86,8 +86,8 @@ class Package(object):
                 self.package_id]
 
 
-    def __le__(self, other):
-        pass
+    def __lt__(self, other):
+        return self.create_time < other.create_time
 
 
     def __str__(self):
@@ -101,7 +101,7 @@ class Package(object):
             "Drop": 1 if self.drop else 0,
             "Package_id": self.package_id,
             "Block_id": self.block_id,
-            "Life" : -1
+            "Create_time" : self.create_time
         }
         return str(print_data)
 
