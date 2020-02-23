@@ -101,7 +101,8 @@ class Package(object):
             "Drop": 1 if self.drop else 0,
             "Package_id": self.package_id,
             "Block_id": self.block_id,
-            "Create_time" : self.create_time
+            "Create_time" : self.create_time,
+            "Deadline" : self.deadline
         }
         return str(print_data)
 

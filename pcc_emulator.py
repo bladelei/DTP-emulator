@@ -235,16 +235,11 @@ class Network():
                 life += link_latency + sender.path[next_hop].extra_delay
 
             if push_new_event:
-                _package = Package(create_time=new_event_time,
-                                   next_hop=new_next_hop,
-                                   block_id=package_id // PACKAGE_NUM,
-                                   package_id=package_id % PACKAGE_NUM,
-                                   package_type=new_event_type,
-                                   queue_delay=new_latency,
-                                   send_delay=package.send_delay,
-                                   drop=new_dropped
-                                   )
-                heapq.heappush(self.q, (new_event_time, sender, _package))
+                package.next_hop = new_next_hop
+                package.package_type = new_event_type
+                package.queue_delay = new_latency
+                package.drop = new_dropped
+                heapq.heappush(self.q, (new_event_time, sender, package))
 
         sender_mi = self.senders[0].get_run_data()
         throughput = sender_mi.get("recv rate")

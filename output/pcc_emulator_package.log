@@ -1,655 +1,451 @@
-{'Time': 0.005207971570457734, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 1}
-{'Time': 0.010415943140915467, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 2}
-{'Time': 0.0156239147113732, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 3}
-{'Time': 0.020831886281830934, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 4}
-{'Time': 0.02603985785228867, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 5}
-{'Time': 0.031247829422746405, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 6}
-{'Time': 0.03645580099320414, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 7}
-{'Time': 0.041663772563661876, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 8}
-{'Time': 0.04687174413411961, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 9}
-{'Time': 0.052079715704577347, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 10}
-{'Time': 0.05728768727503508, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 11}
-{'Time': 0.06249565884549282, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 12}
-{'Time': 0.06770363041595055, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 13}
-{'Time': 0.07291160198640828, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 14}
-{'Time': 0.07811957355686601, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 15}
-{'Time': 0.08332754512732374, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 16}
-{'Time': 0.08853551669778147, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 17}
-{'Time': 0.0937434882682392, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 18}
-{'Time': 0.09895145983869692, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 19}
-{'Time': 0.10415943140915465, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 20}
-{'Time': 0.10520797157045773, 'Type': 'A', 'Position': 1, 'Latency': 0.1, 'Drop': False, 'Package_id': 1}
-{'Time': 0.10936740297961238, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 21}
-{'Time': 0.11457537455007011, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 22}
-{'Time': 0.11978334612052784, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 23}
-{'Time': 0.12499131769098556, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 24}
-{'Time': 0.1301992892614433, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 25}
-{'Time': 0.13540726083190105, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 26}
-{'Time': 0.1406152324023588, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 27}
-{'Time': 0.14582320397281653, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 28}
-{'Time': 0.15103117554327428, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 29}
-{'Time': 0.15623914711373202, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 30}
-{'Time': 0.16144711868418976, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 31}
-{'Time': 0.1666550902546475, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 32}
-{'Time': 0.17186306182510525, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 33}
-{'Time': 0.177071033395563, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 34}
-{'Time': 0.18227900496602073, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 35}
-{'Time': 0.18748697653647847, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 36}
-{'Time': 0.19269494810693621, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 37}
-{'Time': 0.19790291967739396, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 38}
-{'Time': 0.2031108912478517, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 39}
-{'Time': 0.20520797157045775, 'Type': 'A', 'Position': 1, 'Latency': 0.1947920284295423, 'Drop': False, 'Package_id': 2}
-{'Time': 0.20831886281830944, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 40}
-{'Time': 0.21352683438876718, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 41}
-{'Time': 0.21873480595922493, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 42}
-{'Time': 0.22394277752968267, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 43}
-{'Time': 0.2291507491001404, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 44}
-{'Time': 0.23435872067059815, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 45}
-{'Time': 0.2395666922410559, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 46}
-{'Time': 0.24477466381151364, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 47}
-{'Time': 0.24998263538197138, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 48}
-{'Time': 0.2551906069524291, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 49}
-{'Time': 0.26039857852288684, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 50}
-{'Time': 0.26560655009334455, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 51}
-{'Time': 0.27081452166380227, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 52}
-{'Time': 0.27602249323426, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 53}
-{'Time': 0.2812304648047177, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 54}
-{'Time': 0.2864384363751754, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 55}
-{'Time': 0.2916464079456331, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 56}
-{'Time': 0.29685437951609084, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 57}
-{'Time': 0.30206235108654855, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 58}
-{'Time': 0.30520797157045776, 'Type': 'A', 'Position': 1, 'Latency': 0.28958405685908456, 'Drop': False, 'Package_id': 3}
-{'Time': 0.30727032265700627, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 59}
-{'Time': 0.312478294227464, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 60}
-{'Time': 0.3176862657979217, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 61}
-{'Time': 0.3228942373683794, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 62}
-{'Time': 0.3281022089388371, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 63}
-{'Time': 0.33331018050929484, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 64}
-{'Time': 0.33851815207975255, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 65}
-{'Time': 0.34372612365021027, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 66}
-{'Time': 0.348934095220668, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 67}
-{'Time': 0.3541420667911257, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 68}
-{'Time': 0.3593500383615834, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 69}
-{'Time': 0.3645580099320411, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 70}
-{'Time': 0.36976598150249884, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 71}
-{'Time': 0.37497395307295656, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 72}
-{'Time': 0.38018192464341427, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 73}
-{'Time': 0.385389896213872, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 74}
-{'Time': 0.3905978677843297, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 75}
-{'Time': 0.3958058393547874, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 76}
-{'Time': 0.40101381092524513, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 77}
-{'Time': 0.4052079715704578, 'Type': 'A', 'Position': 1, 'Latency': 0.3843760852886269, 'Drop': False, 'Package_id': 4}
-{'Time': 0.40622178249570284, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 78}
-{'Time': 0.41142975406616056, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 79}
-{'Time': 0.4166377256366183, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 80}
-{'Time': 0.421845697207076, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 81}
-{'Time': 0.4270536687775337, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 82}
-{'Time': 0.4322616403479914, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 83}
-{'Time': 0.43746961191844913, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 84}
-{'Time': 0.44267758348890685, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 85}
-{'Time': 0.44788555505936456, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 86}
-{'Time': 0.4530935266298223, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 87}
-{'Time': 0.45830149820028, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 88}
-{'Time': 0.4635094697707377, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 89}
-{'Time': 0.4687174413411954, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 90}
-{'Time': 0.47392541291165313, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 91}
-{'Time': 0.47913338448211085, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 92}
-{'Time': 0.48434135605256856, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 93}
-{'Time': 0.4895493276230263, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 94}
-{'Time': 0.494757299193484, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 95}
-{'Time': 0.4999652707639417, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 96}
-{'Time': 0.5051732423343994, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 97}
-{'Time': 0.5052079715704578, 'Type': 'A', 'Position': 1, 'Latency': 0.47916811371816914, 'Drop': False, 'Package_id': 5}
-{'Time': 0.5103812139048571, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 98}
-{'Time': 0.5155891854753148, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 99}
-{'Time': 0.5207971570457726, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 100}
-{'Time': 0.5260051286162303, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 101}
-{'Time': 0.531213100186688, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 102}
-{'Time': 0.5364210717571457, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 103}
-{'Time': 0.5416290433276034, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 104}
-{'Time': 0.5468370148980611, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 105}
-{'Time': 0.5520449864685189, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 106}
-{'Time': 0.5572529580389766, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 107}
-{'Time': 0.5624609296094343, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 108}
-{'Time': 0.567668901179892, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 109}
-{'Time': 0.5728768727503497, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 110}
-{'Time': 0.5780848443208074, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 111}
-{'Time': 0.5832928158912651, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 112}
-{'Time': 0.5885007874617229, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 113}
-{'Time': 0.5937087590321806, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 114}
-{'Time': 0.5989167306026383, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 115}
-{'Time': 0.604124702173096, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 116}
-{'Time': 0.6052079715704578, 'Type': 'A', 'Position': 1, 'Latency': 0.563544199006796, 'Drop': True, 'Package_id': 8}
-{'Time': 0.6052079715704578, 'Type': 'A', 'Position': 1, 'Latency': 0.5687521705772537, 'Drop': True, 'Package_id': 7}
-{'Time': 0.6052079715704578, 'Type': 'A', 'Position': 1, 'Latency': 0.5739601421477114, 'Drop': True, 'Package_id': 6}
-{'Time': 0.6052079715704579, 'Type': 'A', 'Position': 1, 'Latency': 0.5322963695840497, 'Drop': True, 'Package_id': 14}
-{'Time': 0.6052079715704579, 'Type': 'A', 'Position': 1, 'Latency': 0.5375043411545074, 'Drop': True, 'Package_id': 13}
-{'Time': 0.6052079715704579, 'Type': 'A', 'Position': 1, 'Latency': 0.5427123127249651, 'Drop': True, 'Package_id': 12}
-{'Time': 0.6052079715704579, 'Type': 'A', 'Position': 1, 'Latency': 0.5479202842954228, 'Drop': True, 'Package_id': 11}
-{'Time': 0.6052079715704579, 'Type': 'A', 'Position': 1, 'Latency': 0.5531282558658805, 'Drop': True, 'Package_id': 10}
-{'Time': 0.6052079715704579, 'Type': 'A', 'Position': 1, 'Latency': 0.5583362274363383, 'Drop': True, 'Package_id': 9}
-{'Time': 0.605207971570458, 'Type': 'A', 'Position': 1, 'Latency': 0.4958405685908457, 'Drop': False, 'Package_id': 21}
-{'Time': 0.605207971570458, 'Type': 'A', 'Position': 1, 'Latency': 0.5010485401613034, 'Drop': True, 'Package_id': 20}
-{'Time': 0.605207971570458, 'Type': 'A', 'Position': 1, 'Latency': 0.5062565117317611, 'Drop': True, 'Package_id': 19}
-{'Time': 0.605207971570458, 'Type': 'A', 'Position': 1, 'Latency': 0.5114644833022188, 'Drop': True, 'Package_id': 18}
-{'Time': 0.605207971570458, 'Type': 'A', 'Position': 1, 'Latency': 0.5166724548726765, 'Drop': True, 'Package_id': 17}
-{'Time': 0.605207971570458, 'Type': 'A', 'Position': 1, 'Latency': 0.5218804264431343, 'Drop': True, 'Package_id': 16}
-{'Time': 0.605207971570458, 'Type': 'A', 'Position': 1, 'Latency': 0.527088398013592, 'Drop': True, 'Package_id': 15}
-{'Time': 0.6093326737435537, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 117}
-{'Time': 0.6145406453140114, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 118}
-{'Time': 0.6197486168844691, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 119}
-{'Time': 0.6249565884549269, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 120}
-{'Time': 0.6301645600253846, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 121}
-{'Time': 0.6353725315958423, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 122}
-{'Time': 0.6405805031663, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 123}
-{'Time': 0.6457884747367577, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 124}
-{'Time': 0.6509964463072154, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 125}
-{'Time': 0.6562044178776731, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 126}
-{'Time': 0.6614123894481309, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 127}
-{'Time': 0.6666203610185886, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 128}
-{'Time': 0.6718283325890463, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 129}
-{'Time': 0.677036304159504, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 130}
-{'Time': 0.6822442757299617, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 131}
-{'Time': 0.6874522473004194, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 132}
-{'Time': 0.6926602188708771, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 133}
-{'Time': 0.6978681904413349, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 134}
-{'Time': 0.7030761620117926, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 135}
-{'Time': 0.705207971570458, 'Type': 'A', 'Position': 1, 'Latency': 0.590632597020388, 'Drop': True, 'Package_id': 22}
-{'Time': 0.7052079715704581, 'Type': 'A', 'Position': 1, 'Latency': 0.5698007107385571, 'Drop': True, 'Package_id': 26}
-{'Time': 0.7052079715704581, 'Type': 'A', 'Position': 1, 'Latency': 0.5750086823090148, 'Drop': True, 'Package_id': 25}
-{'Time': 0.7052079715704581, 'Type': 'A', 'Position': 1, 'Latency': 0.5802166538794725, 'Drop': True, 'Package_id': 24}
-{'Time': 0.7052079715704581, 'Type': 'A', 'Position': 1, 'Latency': 0.5854246254499302, 'Drop': True, 'Package_id': 23}
-{'Time': 0.7052079715704582, 'Type': 'A', 'Position': 1, 'Latency': 0.5437608528862685, 'Drop': True, 'Package_id': 31}
-{'Time': 0.7052079715704582, 'Type': 'A', 'Position': 1, 'Latency': 0.5489688244567262, 'Drop': True, 'Package_id': 30}
-{'Time': 0.7052079715704582, 'Type': 'A', 'Position': 1, 'Latency': 0.554176796027184, 'Drop': True, 'Package_id': 29}
-{'Time': 0.7052079715704582, 'Type': 'A', 'Position': 1, 'Latency': 0.5593847675976417, 'Drop': True, 'Package_id': 28}
-{'Time': 0.7052079715704582, 'Type': 'A', 'Position': 1, 'Latency': 0.5645927391680994, 'Drop': True, 'Package_id': 27}
-{'Time': 0.7052079715704583, 'Type': 'A', 'Position': 1, 'Latency': 0.5281369381748954, 'Drop': True, 'Package_id': 34}
-{'Time': 0.7052079715704583, 'Type': 'A', 'Position': 1, 'Latency': 0.5333449097453531, 'Drop': True, 'Package_id': 33}
-{'Time': 0.7052079715704583, 'Type': 'A', 'Position': 1, 'Latency': 0.5385528813158108, 'Drop': True, 'Package_id': 32}
-{'Time': 0.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5020970803226068, 'Drop': True, 'Package_id': 39}
-{'Time': 0.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5073050518930645, 'Drop': True, 'Package_id': 38}
-{'Time': 0.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5125130234635222, 'Drop': True, 'Package_id': 37}
-{'Time': 0.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.51772099503398, 'Drop': True, 'Package_id': 36}
-{'Time': 0.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5229289666044377, 'Drop': True, 'Package_id': 35}
-{'Time': 0.7052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.4968891087521491, 'Drop': False, 'Package_id': 40}
-{'Time': 0.7082841335822503, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 136}
-{'Time': 0.713492105152708, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 137}
-{'Time': 0.7187000767231657, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 138}
-{'Time': 0.7239080482936234, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 139}
-{'Time': 0.7291160198640811, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 140}
-{'Time': 0.7343239914345389, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 141}
-{'Time': 0.7395319630049966, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 142}
-{'Time': 0.7447399345754543, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 143}
-{'Time': 0.749947906145912, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 144}
-{'Time': 0.7551558777163697, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 145}
-{'Time': 0.7603638492868274, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 146}
-{'Time': 0.7655718208572851, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 147}
-{'Time': 0.7707797924277429, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 148}
-{'Time': 0.7759877639982006, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 149}
-{'Time': 0.7811957355686583, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 150}
-{'Time': 0.786403707139116, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 151}
-{'Time': 0.7916116787095737, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 152}
-{'Time': 0.7968196502800314, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 153}
-{'Time': 0.8020276218504891, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 154}
-{'Time': 0.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5812651940407759, 'Drop': True, 'Package_id': 43}
-{'Time': 0.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5864731656112336, 'Drop': True, 'Package_id': 42}
-{'Time': 0.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5916811371816914, 'Drop': True, 'Package_id': 41}
-{'Time': 0.8052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5656412793294028, 'Drop': True, 'Package_id': 46}
-{'Time': 0.8052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5708492508998605, 'Drop': True, 'Package_id': 45}
-{'Time': 0.8052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5760572224703182, 'Drop': True, 'Package_id': 44}
-{'Time': 0.8052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.4979376489134525, 'Drop': False, 'Package_id': 59}
-{'Time': 0.8052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5031456204839102, 'Drop': True, 'Package_id': 58}
-{'Time': 0.8052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5083535920543679, 'Drop': True, 'Package_id': 57}
-{'Time': 0.8052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5135615636248256, 'Drop': True, 'Package_id': 56}
-{'Time': 0.8052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5187695351952833, 'Drop': True, 'Package_id': 55}
-{'Time': 0.8052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5239775067657411, 'Drop': True, 'Package_id': 54}
-{'Time': 0.8052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5291854783361988, 'Drop': True, 'Package_id': 53}
-{'Time': 0.8052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5343934499066565, 'Drop': True, 'Package_id': 52}
-{'Time': 0.8052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5396014214771142, 'Drop': True, 'Package_id': 51}
-{'Time': 0.8052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5448093930475719, 'Drop': True, 'Package_id': 50}
-{'Time': 0.8052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5500173646180296, 'Drop': True, 'Package_id': 49}
-{'Time': 0.8052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5552253361884874, 'Drop': True, 'Package_id': 48}
-{'Time': 0.8052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5604333077589451, 'Drop': True, 'Package_id': 47}
-{'Time': 0.8072355934209469, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 155}
-{'Time': 0.8124435649914046, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 156}
-{'Time': 0.8176515365618623, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 157}
-{'Time': 0.82285950813232, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 158}
-{'Time': 0.8280674797027777, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 159}
-{'Time': 0.8332754512732354, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 160}
-{'Time': 0.8384834228436931, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 161}
-{'Time': 0.8436913944141509, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 162}
-{'Time': 0.8488993659846086, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 163}
-{'Time': 0.8541073375550663, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 164}
-{'Time': 0.859315309125524, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 165}
-{'Time': 0.8645232806959817, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 166}
-{'Time': 0.8697312522664394, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 167}
-{'Time': 0.8749392238368972, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 168}
-{'Time': 0.8801471954073549, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 169}
-{'Time': 0.8853551669778126, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 170}
-{'Time': 0.8905631385482703, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 171}
-{'Time': 0.895771110118728, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 172}
-{'Time': 0.9009790816891857, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 173}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.4989861890747559, 'Drop': False, 'Package_id': 78}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5041941606452136, 'Drop': True, 'Package_id': 77}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5094021322156713, 'Drop': True, 'Package_id': 76}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.514610103786129, 'Drop': True, 'Package_id': 75}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5198180753565868, 'Drop': True, 'Package_id': 74}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5250260469270445, 'Drop': True, 'Package_id': 73}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5302340184975022, 'Drop': True, 'Package_id': 72}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5354419900679599, 'Drop': True, 'Package_id': 71}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5406499616384176, 'Drop': True, 'Package_id': 70}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5458579332088753, 'Drop': True, 'Package_id': 69}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.551065904779333, 'Drop': True, 'Package_id': 68}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5562738763497908, 'Drop': True, 'Package_id': 67}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5614818479202485, 'Drop': True, 'Package_id': 66}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5666898194907062, 'Drop': True, 'Package_id': 65}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5718977910611639, 'Drop': True, 'Package_id': 64}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5771057626316216, 'Drop': True, 'Package_id': 63}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5823137342020793, 'Drop': True, 'Package_id': 62}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.587521705772537, 'Drop': True, 'Package_id': 61}
-{'Time': 0.9052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5927296773429948, 'Drop': True, 'Package_id': 60}
-{'Time': 0.9061870532596434, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 174}
-{'Time': 0.9113950248301012, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 175}
-{'Time': 0.9166029964005589, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 176}
-{'Time': 0.9218109679710166, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 177}
-{'Time': 0.9270189395414743, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 178}
-{'Time': 0.932226911111932, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 179}
-{'Time': 0.9374348826823897, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 180}
-{'Time': 0.9426428542528474, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 181}
-{'Time': 0.9478508258233052, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 182}
-{'Time': 0.9530587973937629, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 183}
-{'Time': 0.9582667689642206, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 184}
-{'Time': 0.9634747405346783, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 185}
-{'Time': 0.968682712105136, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 186}
-{'Time': 0.9738906836755937, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 187}
-{'Time': 0.9790986552460514, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 188}
-{'Time': 0.9843066268165092, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 189}
-{'Time': 0.9895145983869669, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 190}
-{'Time': 0.9947225699574246, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 191}
-{'Time': 0.9999305415278823, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 192}
-{'Time': 1.0051385130983401, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 193}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.4948267576656016, 'Drop': False, 'Package_id': 98}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5000347292360593, 'Drop': True, 'Package_id': 97}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.505242700806517, 'Drop': True, 'Package_id': 96}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5104506723769747, 'Drop': True, 'Package_id': 95}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5156586439474324, 'Drop': True, 'Package_id': 94}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5208666155178902, 'Drop': True, 'Package_id': 93}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5260745870883479, 'Drop': True, 'Package_id': 92}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5312825586588056, 'Drop': True, 'Package_id': 91}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5364905302292633, 'Drop': True, 'Package_id': 90}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.541698501799721, 'Drop': True, 'Package_id': 89}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5469064733701787, 'Drop': True, 'Package_id': 88}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5521144449406364, 'Drop': True, 'Package_id': 87}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5573224165110942, 'Drop': True, 'Package_id': 86}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5625303880815519, 'Drop': True, 'Package_id': 85}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5677383596520096, 'Drop': True, 'Package_id': 84}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5729463312224673, 'Drop': True, 'Package_id': 83}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.578154302792925, 'Drop': True, 'Package_id': 82}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5833622743633827, 'Drop': True, 'Package_id': 81}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5885702459338404, 'Drop': True, 'Package_id': 80}
-{'Time': 1.0052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5937782175042982, 'Drop': True, 'Package_id': 79}
-{'Time': 1.010346484668798, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 194}
-{'Time': 1.0155544562392558, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 195}
-{'Time': 1.0207624278097136, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 196}
-{'Time': 1.0259703993801714, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 197}
-{'Time': 1.0311783709506293, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 198}
-{'Time': 1.036386342521087, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 199}
-{'Time': 1.041594314091545, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 200}
-{'Time': 1.0468022856620027, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 201}
-{'Time': 1.0520102572324606, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 202}
-{'Time': 1.0572182288029184, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 203}
-{'Time': 1.0624262003733762, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 204}
-{'Time': 1.067634171943834, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 205}
-{'Time': 1.0728421435142919, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 206}
-{'Time': 1.0780501150847497, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 207}
-{'Time': 1.0832580866552075, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 208}
-{'Time': 1.0884660582256653, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 209}
-{'Time': 1.0936740297961232, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 210}
-{'Time': 1.098882001366581, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 211}
-{'Time': 1.1040899729370388, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 212}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.495875297826905, 'Drop': False, 'Package_id': 117}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5010832693973627, 'Drop': True, 'Package_id': 116}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5062912409678204, 'Drop': True, 'Package_id': 115}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5114992125382781, 'Drop': True, 'Package_id': 114}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5167071841087358, 'Drop': True, 'Package_id': 113}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5219151556791936, 'Drop': True, 'Package_id': 112}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5271231272496513, 'Drop': True, 'Package_id': 111}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.532331098820109, 'Drop': True, 'Package_id': 110}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5375390703905667, 'Drop': True, 'Package_id': 109}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5427470419610244, 'Drop': True, 'Package_id': 108}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5479550135314821, 'Drop': True, 'Package_id': 107}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5531629851019398, 'Drop': True, 'Package_id': 106}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5583709566723976, 'Drop': True, 'Package_id': 105}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5635789282428553, 'Drop': True, 'Package_id': 104}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.568786899813313, 'Drop': True, 'Package_id': 103}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5739948713837707, 'Drop': True, 'Package_id': 102}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5792028429542284, 'Drop': True, 'Package_id': 101}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5844108145246861, 'Drop': True, 'Package_id': 100}
-{'Time': 1.1052079715704588, 'Type': 'A', 'Position': 1, 'Latency': 0.5896187860951438, 'Drop': True, 'Package_id': 99}
-{'Time': 1.1092979445074966, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 213}
-{'Time': 1.1145059160779545, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 214}
-{'Time': 1.1197138876484123, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 215}
-{'Time': 1.1249218592188701, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 216}
-{'Time': 1.130129830789328, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 217}
-{'Time': 1.1353378023597858, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 218}
-{'Time': 1.1405457739302436, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 219}
-{'Time': 1.1457537455007014, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 220}
-{'Time': 1.1509617170711592, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 221}
-{'Time': 1.156169688641617, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 222}
-{'Time': 1.161377660212075, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 223}
-{'Time': 1.1665856317825327, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 224}
-{'Time': 1.1717936033529905, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 225}
-{'Time': 1.1770015749234484, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 226}
-{'Time': 1.1822095464939062, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 227}
-{'Time': 1.187417518064364, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 228}
-{'Time': 1.1926254896348218, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 229}
-{'Time': 1.1978334612052797, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 230}
-{'Time': 1.2030414327757375, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 231}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.4969238379882084, 'Drop': False, 'Package_id': 136}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5021318095586661, 'Drop': True, 'Package_id': 135}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5073397811291238, 'Drop': True, 'Package_id': 134}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5125477526995815, 'Drop': True, 'Package_id': 133}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5177557242700392, 'Drop': True, 'Package_id': 132}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.522963695840497, 'Drop': True, 'Package_id': 131}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5281716674109547, 'Drop': True, 'Package_id': 130}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5333796389814124, 'Drop': True, 'Package_id': 129}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5385876105518701, 'Drop': True, 'Package_id': 128}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5437955821223278, 'Drop': True, 'Package_id': 127}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5490035536927855, 'Drop': True, 'Package_id': 126}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5542115252632432, 'Drop': True, 'Package_id': 125}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.559419496833701, 'Drop': True, 'Package_id': 124}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5646274684041587, 'Drop': True, 'Package_id': 123}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5698354399746164, 'Drop': True, 'Package_id': 122}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5750434115450741, 'Drop': True, 'Package_id': 121}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5802513831155318, 'Drop': True, 'Package_id': 120}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5854593546859895, 'Drop': True, 'Package_id': 119}
-{'Time': 1.2052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5906673262564472, 'Drop': True, 'Package_id': 118}
-{'Time': 1.2082494043461953, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 232}
-{'Time': 1.2134573759166531, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 233}
-{'Time': 1.218665347487111, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 234}
-{'Time': 1.2238733190575688, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 235}
-{'Time': 1.2290812906280266, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 236}
-{'Time': 1.2342892621984844, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 237}
-{'Time': 1.2394972337689423, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 238}
-{'Time': 1.2447052053394, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 239}
-{'Time': 1.249913176909858, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 240}
-{'Time': 1.2551211484803158, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 241}
-{'Time': 1.2603291200507736, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 242}
-{'Time': 1.2655370916212314, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 243}
-{'Time': 1.2707450631916892, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 244}
-{'Time': 1.275953034762147, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 245}
-{'Time': 1.2811610063326049, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 246}
-{'Time': 1.2863689779030627, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 247}
-{'Time': 1.2915769494735205, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 248}
-{'Time': 1.2967849210439784, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 249}
-{'Time': 1.3019928926144362, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 250}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.4979723781495118, 'Drop': False, 'Package_id': 155}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5031803497199695, 'Drop': True, 'Package_id': 154}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5083883212904272, 'Drop': True, 'Package_id': 153}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5135962928608849, 'Drop': True, 'Package_id': 152}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5188042644313426, 'Drop': True, 'Package_id': 151}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5240122360018004, 'Drop': True, 'Package_id': 150}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5292202075722581, 'Drop': True, 'Package_id': 149}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5344281791427158, 'Drop': True, 'Package_id': 148}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5396361507131735, 'Drop': True, 'Package_id': 147}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5448441222836312, 'Drop': True, 'Package_id': 146}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5500520938540889, 'Drop': True, 'Package_id': 145}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5552600654245466, 'Drop': True, 'Package_id': 144}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5604680369950044, 'Drop': True, 'Package_id': 143}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5656760085654621, 'Drop': True, 'Package_id': 142}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5708839801359198, 'Drop': True, 'Package_id': 141}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5760919517063775, 'Drop': True, 'Package_id': 140}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5812999232768352, 'Drop': True, 'Package_id': 139}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5865078948472929, 'Drop': True, 'Package_id': 138}
-{'Time': 1.3052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5917158664177506, 'Drop': True, 'Package_id': 137}
-{'Time': 1.307200864184894, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 251}
-{'Time': 1.3124088357553518, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 252}
-{'Time': 1.3176168073258097, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 253}
-{'Time': 1.3228247788962675, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 254}
-{'Time': 1.3280327504667253, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 255}
-{'Time': 1.3332407220371831, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 256}
-{'Time': 1.338448693607641, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 257}
-{'Time': 1.3436566651780988, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 258}
-{'Time': 1.3488646367485566, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 259}
-{'Time': 1.3540726083190144, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 260}
-{'Time': 1.3592805798894723, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 261}
-{'Time': 1.36448855145993, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 262}
-{'Time': 1.369696523030388, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 263}
-{'Time': 1.3749044946008457, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 264}
-{'Time': 1.3801124661713036, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 265}
-{'Time': 1.3853204377417614, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 266}
-{'Time': 1.3905284093122192, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 267}
-{'Time': 1.395736380882677, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 268}
-{'Time': 1.4009443524531349, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 269}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.4990209183108152, 'Drop': False, 'Package_id': 174}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5042288898812729, 'Drop': True, 'Package_id': 173}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5094368614517306, 'Drop': True, 'Package_id': 172}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5146448330221883, 'Drop': True, 'Package_id': 171}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.519852804592646, 'Drop': True, 'Package_id': 170}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5250607761631038, 'Drop': True, 'Package_id': 169}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5302687477335615, 'Drop': True, 'Package_id': 168}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5354767193040192, 'Drop': True, 'Package_id': 167}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5406846908744769, 'Drop': True, 'Package_id': 166}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5458926624449346, 'Drop': True, 'Package_id': 165}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5511006340153923, 'Drop': True, 'Package_id': 164}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.55630860558585, 'Drop': True, 'Package_id': 163}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5615165771563078, 'Drop': True, 'Package_id': 162}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5667245487267655, 'Drop': True, 'Package_id': 161}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5719325202972232, 'Drop': True, 'Package_id': 160}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5771404918676809, 'Drop': True, 'Package_id': 159}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5823484634381386, 'Drop': True, 'Package_id': 158}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5875564350085963, 'Drop': True, 'Package_id': 157}
-{'Time': 1.4052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.592764406579054, 'Drop': True, 'Package_id': 156}
-{'Time': 1.4061523240235927, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 270}
-{'Time': 1.4113602955940505, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 271}
-{'Time': 1.4165682671645083, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 272}
-{'Time': 1.4217762387349662, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 273}
-{'Time': 1.426984210305424, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 274}
-{'Time': 1.4321921818758818, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 275}
-{'Time': 1.4374001534463396, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 276}
-{'Time': 1.4426081250167975, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 277}
-{'Time': 1.4478160965872553, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 278}
-{'Time': 1.4530240681577131, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 279}
-{'Time': 1.458232039728171, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 280}
-{'Time': 1.4634400112986288, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 281}
-{'Time': 1.4686479828690866, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 282}
-{'Time': 1.4738559544395444, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 283}
-{'Time': 1.4790639260100023, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 284}
-{'Time': 1.48427189758046, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 285}
-{'Time': 1.489479869150918, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 286}
-{'Time': 1.4946878407213757, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 287}
-{'Time': 1.4998958122918336, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 288}
-{'Time': 1.5051037838622914, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 289}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.49486148690166065, 'Drop': False, 'Package_id': 194}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5000694584721185, 'Drop': True, 'Package_id': 193}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5052774300425763, 'Drop': True, 'Package_id': 192}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.510485401613034, 'Drop': True, 'Package_id': 191}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5156933731834917, 'Drop': True, 'Package_id': 190}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5209013447539494, 'Drop': True, 'Package_id': 189}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5261093163244072, 'Drop': True, 'Package_id': 188}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5313172878948649, 'Drop': True, 'Package_id': 187}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5365252594653226, 'Drop': True, 'Package_id': 186}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5417332310357803, 'Drop': True, 'Package_id': 185}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.546941202606238, 'Drop': True, 'Package_id': 184}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5521491741766957, 'Drop': True, 'Package_id': 183}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5573571457471534, 'Drop': True, 'Package_id': 182}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5625651173176112, 'Drop': True, 'Package_id': 181}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5677730888880689, 'Drop': True, 'Package_id': 180}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5729810604585266, 'Drop': True, 'Package_id': 179}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5781890320289843, 'Drop': True, 'Package_id': 178}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.583397003599442, 'Drop': True, 'Package_id': 177}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5886049751698997, 'Drop': True, 'Package_id': 176}
-{'Time': 1.5052079715704587, 'Type': 'A', 'Position': 1, 'Latency': 0.5938129467403575, 'Drop': True, 'Package_id': 175}
-{'Time': 1.5103117554327492, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 290}
-{'Time': 1.515519727003207, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 291}
-{'Time': 1.5207276985736649, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 292}
-{'Time': 1.5259356701441227, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 293}
-{'Time': 1.5311436417145805, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 294}
-{'Time': 1.5363516132850383, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 295}
-{'Time': 1.5415595848554962, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 296}
-{'Time': 1.546767556425954, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 297}
-{'Time': 1.5519755279964118, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 298}
-{'Time': 1.5571834995668696, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 299}
-{'Time': 1.5623914711373275, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 300}
-{'Time': 1.5675994427077853, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 301}
-{'Time': 1.572807414278243, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 302}
-{'Time': 1.578015385848701, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 303}
-{'Time': 1.5832233574191588, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 304}
-{'Time': 1.5884313289896166, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 305}
-{'Time': 1.5936393005600744, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 306}
-{'Time': 1.5988472721305322, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 307}
-{'Time': 1.60405524370099, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 308}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.49591002706296194, 'Drop': False, 'Package_id': 213}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5011179986334198, 'Drop': True, 'Package_id': 212}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5063259702038776, 'Drop': True, 'Package_id': 211}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5115339417743354, 'Drop': True, 'Package_id': 210}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5167419133447932, 'Drop': True, 'Package_id': 209}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5219498849152511, 'Drop': True, 'Package_id': 208}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5271578564857089, 'Drop': True, 'Package_id': 207}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5323658280561667, 'Drop': True, 'Package_id': 206}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5375737996266245, 'Drop': True, 'Package_id': 205}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5427817711970824, 'Drop': True, 'Package_id': 204}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5479897427675402, 'Drop': True, 'Package_id': 203}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.553197714337998, 'Drop': True, 'Package_id': 202}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5584056859084559, 'Drop': True, 'Package_id': 201}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5636136574789137, 'Drop': True, 'Package_id': 200}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5688216290493715, 'Drop': True, 'Package_id': 199}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5740296006198293, 'Drop': True, 'Package_id': 198}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5792375721902872, 'Drop': True, 'Package_id': 197}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.584445543760745, 'Drop': True, 'Package_id': 196}
-{'Time': 1.6052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5896535153312028, 'Drop': True, 'Package_id': 195}
-{'Time': 1.6092632152714479, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 309}
-{'Time': 1.6144711868419057, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 310}
-{'Time': 1.6196791584123635, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 311}
-{'Time': 1.6248871299828214, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 312}
-{'Time': 1.6300951015532792, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 313}
-{'Time': 1.635303073123737, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 314}
-{'Time': 1.6405110446941948, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 315}
-{'Time': 1.6457190162646527, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 316}
-{'Time': 1.6509269878351105, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 317}
-{'Time': 1.6561349594055683, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 318}
-{'Time': 1.6613429309760261, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 319}
-{'Time': 1.666550902546484, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 320}
-{'Time': 1.6717588741169418, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 321}
-{'Time': 1.6769668456873996, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 322}
-{'Time': 1.6821748172578574, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 323}
-{'Time': 1.6873827888283153, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 324}
-{'Time': 1.692590760398773, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 325}
-{'Time': 1.697798731969231, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 326}
-{'Time': 1.7030067035396887, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 327}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.49695856722426324, 'Drop': False, 'Package_id': 232}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5021665387947211, 'Drop': True, 'Package_id': 231}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5073745103651789, 'Drop': True, 'Package_id': 230}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5125824819356367, 'Drop': True, 'Package_id': 229}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5177904535060945, 'Drop': True, 'Package_id': 228}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5229984250765524, 'Drop': True, 'Package_id': 227}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5282063966470102, 'Drop': True, 'Package_id': 226}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.533414368217468, 'Drop': True, 'Package_id': 225}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5386223397879258, 'Drop': True, 'Package_id': 224}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5438303113583837, 'Drop': True, 'Package_id': 223}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5490382829288415, 'Drop': True, 'Package_id': 222}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5542462544992993, 'Drop': True, 'Package_id': 221}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5594542260697571, 'Drop': True, 'Package_id': 220}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.564662197640215, 'Drop': True, 'Package_id': 219}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5698701692106728, 'Drop': True, 'Package_id': 218}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5750781407811306, 'Drop': True, 'Package_id': 217}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5802861123515884, 'Drop': True, 'Package_id': 216}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5854940839220463, 'Drop': True, 'Package_id': 215}
-{'Time': 1.7052079715704584, 'Type': 'A', 'Position': 1, 'Latency': 0.5907020554925041, 'Drop': True, 'Package_id': 214}
-{'Time': 1.7082146751101466, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 328}
-{'Time': 1.7134226466806044, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 329}
-{'Time': 1.7186306182510622, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 330}
-{'Time': 1.72383858982152, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 331}
-{'Time': 1.7290465613919779, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 332}
-{'Time': 1.7342545329624357, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 333}
-{'Time': 1.7394625045328935, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 334}
-{'Time': 1.7446704761033514, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 335}
-{'Time': 1.7498784476738092, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 336}
-{'Time': 1.755086419244267, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 337}
-{'Time': 1.7602943908147248, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 338}
-{'Time': 1.7655023623851827, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 339}
-{'Time': 1.7707103339556405, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 340}
-{'Time': 1.7759183055260983, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 341}
-{'Time': 1.7811262770965561, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 342}
-{'Time': 1.786334248667014, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 343}
-{'Time': 1.7915422202374718, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 344}
-{'Time': 1.7967501918079296, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 345}
-{'Time': 1.8019581633783874, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 346}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.49800710738556453, 'Drop': False, 'Package_id': 251}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5032150789560224, 'Drop': True, 'Package_id': 250}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5084230505264802, 'Drop': True, 'Package_id': 249}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.513631022096938, 'Drop': True, 'Package_id': 248}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5188389936673958, 'Drop': True, 'Package_id': 247}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5240469652378537, 'Drop': True, 'Package_id': 246}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5292549368083115, 'Drop': True, 'Package_id': 245}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5344629083787693, 'Drop': True, 'Package_id': 244}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5396708799492271, 'Drop': True, 'Package_id': 243}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.544878851519685, 'Drop': True, 'Package_id': 242}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5500868230901428, 'Drop': True, 'Package_id': 241}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5552947946606006, 'Drop': True, 'Package_id': 240}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5605027662310584, 'Drop': True, 'Package_id': 239}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5657107378015163, 'Drop': True, 'Package_id': 238}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5709187093719741, 'Drop': True, 'Package_id': 237}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5761266809424319, 'Drop': True, 'Package_id': 236}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5813346525128897, 'Drop': True, 'Package_id': 235}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5865426240833476, 'Drop': True, 'Package_id': 234}
-{'Time': 1.8052079715704585, 'Type': 'A', 'Position': 1, 'Latency': 0.5917505956538054, 'Drop': True, 'Package_id': 233}
-{'Time': 1.8071661349488453, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 347}
-{'Time': 1.812374106519303, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 348}
-{'Time': 1.817582078089761, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 349}
-{'Time': 1.8227900496602187, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 350}
-{'Time': 1.8279980212306766, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 351}
-{'Time': 1.8332059928011344, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 352}
-{'Time': 1.8384139643715922, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 353}
-{'Time': 1.84362193594205, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 354}
-{'Time': 1.8488299075125079, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 355}
-{'Time': 1.8540378790829657, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 356}
-{'Time': 1.8592458506534235, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 357}
-{'Time': 1.8644538222238813, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 358}
-{'Time': 1.8696617937943392, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 359}
-{'Time': 1.874869765364797, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 360}
-{'Time': 1.8800777369352548, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 361}
-{'Time': 1.8852857085057126, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 362}
-{'Time': 1.8904936800761705, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 363}
-{'Time': 1.8957016516466283, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 364}
-{'Time': 1.9009096232170861, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 365}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.4990556475468658, 'Drop': False, 'Package_id': 270}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5042636191173236, 'Drop': True, 'Package_id': 269}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5094715906877815, 'Drop': True, 'Package_id': 268}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5146795622582393, 'Drop': True, 'Package_id': 267}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5198875338286971, 'Drop': True, 'Package_id': 266}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.525095505399155, 'Drop': True, 'Package_id': 265}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5303034769696128, 'Drop': True, 'Package_id': 264}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5355114485400706, 'Drop': True, 'Package_id': 263}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5407194201105284, 'Drop': True, 'Package_id': 262}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5459273916809863, 'Drop': True, 'Package_id': 261}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5511353632514441, 'Drop': True, 'Package_id': 260}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5563433348219019, 'Drop': True, 'Package_id': 259}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5615513063923597, 'Drop': True, 'Package_id': 258}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5667592779628176, 'Drop': True, 'Package_id': 257}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5719672495332754, 'Drop': True, 'Package_id': 256}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5771752211037332, 'Drop': True, 'Package_id': 255}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.582383192674191, 'Drop': True, 'Package_id': 254}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5875911642446489, 'Drop': True, 'Package_id': 253}
-{'Time': 1.9052079715704586, 'Type': 'A', 'Position': 1, 'Latency': 0.5927991358151067, 'Drop': True, 'Package_id': 252}
-{'Time': 1.906117594787544, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 366}
-{'Time': 1.9113255663580018, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 367}
-{'Time': 1.9165335379284596, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 368}
-{'Time': 1.9217415094989174, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 369}
-{'Time': 1.9269494810693752, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 370}
-{'Time': 1.932157452639833, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 371}
-{'Time': 1.937365424210291, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 372}
-{'Time': 1.9425733957807487, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 373}
-{'Time': 1.9477813673512065, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 374}
-{'Time': 1.9529893389216644, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 375}
-{'Time': 1.9581973104921222, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 376}
-{'Time': 1.96340528206258, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 377}
-{'Time': 1.9686132536330379, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 378}
-{'Time': 1.9738212252034957, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 379}
-{'Time': 1.9790291967739535, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 380}
-{'Time': 1.9842371683444113, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 381}
-{'Time': 1.9894451399148692, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 382}
-{'Time': 1.994653111485327, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 383}
-{'Time': 1.9998610830557848, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 384}
-{'Time': 2.0050690546262424, 'Type': 'S', 'Position': 0, 'Latency': 0.0, 'Drop': False, 'Package_id': 385}
+{'Time': 0.0014272805859555596, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 0, 'Create_time': 0.0014272805859555596}
+{'Time': 0.0028545611719111193, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 0, 'Create_time': 0.0028545611719111193}
+{'Time': 0.004281841757866679, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 0, 'Create_time': 0.004281841757866679}
+{'Time': 0.0057091223438222385, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 0, 'Create_time': 0.0057091223438222385}
+{'Time': 0.007136402929777798, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 0, 'Create_time': 0.007136402929777798}
+{'Time': 0.008563683515733358, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 0, 'Create_time': 0.008563683515733358}
+{'Time': 0.009990964101688917, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 0, 'Create_time': 0.009990964101688917}
+{'Time': 0.011418244687644477, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 0, 'Create_time': 0.011418244687644477}
+{'Time': 0.012845525273600037, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 0, 'Create_time': 0.012845525273600037}
+{'Time': 0.014272805859555596, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 1, 'Create_time': 0.014272805859555596}
+{'Time': 0.015700086445511158, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 1, 'Create_time': 0.015700086445511158}
+{'Time': 0.017127367031466716, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 1, 'Create_time': 0.017127367031466716}
+{'Time': 0.018554647617422274, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 1, 'Create_time': 0.018554647617422274}
+{'Time': 0.01998192820337783, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 1, 'Create_time': 0.01998192820337783}
+{'Time': 0.02140920878933339, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 1, 'Create_time': 0.02140920878933339}
+{'Time': 0.022836489375288947, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 1, 'Create_time': 0.022836489375288947}
+{'Time': 0.024263769961244505, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 1, 'Create_time': 0.024263769961244505}
+{'Time': 0.025691050547200063, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 1, 'Create_time': 0.025691050547200063}
+{'Time': 0.02711833113315562, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 1, 'Create_time': 0.02711833113315562}
+{'Time': 0.02854561171911118, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 2, 'Create_time': 0.02854561171911118}
+{'Time': 0.029972892305066737, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 2, 'Create_time': 0.029972892305066737}
+{'Time': 0.031400172891022295, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 2, 'Create_time': 0.031400172891022295}
+{'Time': 0.03282745347697785, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 2, 'Create_time': 0.03282745347697785}
+{'Time': 0.03425473406293341, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 2, 'Create_time': 0.03425473406293341}
+{'Time': 0.03568201464888897, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 2, 'Create_time': 0.03568201464888897}
+{'Time': 0.037109295234844526, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 2, 'Create_time': 0.037109295234844526}
+{'Time': 0.038536575820800084, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 2, 'Create_time': 0.038536575820800084}
+{'Time': 0.03996385640675564, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 2, 'Create_time': 0.03996385640675564}
+{'Time': 0.0413911369927112, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 2, 'Create_time': 0.0413911369927112}
+{'Time': 0.04281841757866676, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 3, 'Create_time': 0.04281841757866676}
+{'Time': 0.044245698164622316, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 3, 'Create_time': 0.044245698164622316}
+{'Time': 0.045672978750577874, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 3, 'Create_time': 0.045672978750577874}
+{'Time': 0.04710025933653343, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 3, 'Create_time': 0.04710025933653343}
+{'Time': 0.04852753992248899, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 3, 'Create_time': 0.04852753992248899}
+{'Time': 0.04995482050844455, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 3, 'Create_time': 0.04995482050844455}
+{'Time': 0.051382101094400105, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 3, 'Create_time': 0.051382101094400105}
+{'Time': 0.05280938168035566, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 3, 'Create_time': 0.05280938168035566}
+{'Time': 0.05423666226631122, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 3, 'Create_time': 0.05423666226631122}
+{'Time': 0.05566394285226678, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 3, 'Create_time': 0.05566394285226678}
+{'Time': 0.05709122343822234, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 4, 'Create_time': 0.05709122343822234}
+{'Time': 0.058518504024177895, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 4, 'Create_time': 0.058518504024177895}
+{'Time': 0.05994578461013345, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 4, 'Create_time': 0.05994578461013345}
+{'Time': 0.06137306519608901, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 4, 'Create_time': 0.06137306519608901}
+{'Time': 0.06280034578204458, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 4, 'Create_time': 0.06280034578204458}
+{'Time': 0.06422762636800014, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 4, 'Create_time': 0.06422762636800014}
+{'Time': 0.0656549069539557, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 4, 'Create_time': 0.0656549069539557}
+{'Time': 0.06708218753991127, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 4, 'Create_time': 0.06708218753991127}
+{'Time': 0.06850946812586683, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 4, 'Create_time': 0.06850946812586683}
+{'Time': 0.0699367487118224, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 4, 'Create_time': 0.0699367487118224}
+{'Time': 0.07136402929777796, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 5, 'Create_time': 0.07136402929777796}
+{'Time': 0.07279130988373353, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 5, 'Create_time': 0.07279130988373353}
+{'Time': 0.0742185904696891, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 5, 'Create_time': 0.0742185904696891}
+{'Time': 0.07564587105564466, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 5, 'Create_time': 0.07564587105564466}
+{'Time': 0.07707315164160022, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 5, 'Create_time': 0.07707315164160022}
+{'Time': 0.07850043222755579, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 5, 'Create_time': 0.07850043222755579}
+{'Time': 0.07992771281351135, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 5, 'Create_time': 0.07992771281351135}
+{'Time': 0.08135499339946692, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 5, 'Create_time': 0.08135499339946692}
+{'Time': 0.08278227398542248, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 5, 'Create_time': 0.08278227398542248}
+{'Time': 0.08420955457137805, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 5, 'Create_time': 0.08420955457137805}
+{'Time': 0.08563683515733361, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 6, 'Create_time': 0.08563683515733361}
+{'Time': 0.08706411574328918, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 6, 'Create_time': 0.08706411574328918}
+{'Time': 0.08849139632924474, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 6, 'Create_time': 0.08849139632924474}
+{'Time': 0.08991867691520031, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 6, 'Create_time': 0.08991867691520031}
+{'Time': 0.09134595750115587, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 6, 'Create_time': 0.09134595750115587}
+{'Time': 0.09277323808711144, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 6, 'Create_time': 0.09277323808711144}
+{'Time': 0.094200518673067, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 6, 'Create_time': 0.094200518673067}
+{'Time': 0.09562779925902257, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 6, 'Create_time': 0.09562779925902257}
+{'Time': 0.09705507984497813, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 6, 'Create_time': 0.09705507984497813}
+{'Time': 0.0984823604309337, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 6, 'Create_time': 0.0984823604309337}
+{'Time': 0.09990964101688926, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 7, 'Create_time': 0.09990964101688926}
+{'Time': 0.10133692160284483, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 7, 'Create_time': 0.10133692160284483}
+{'Time': 0.0014272805859555596, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.1, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 0, 'Create_time': 0.0014272805859555596}
+{'Time': 0.10276420218880039, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 7, 'Create_time': 0.10276420218880039}
+{'Time': 0.0028545611719111193, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10007271941404444, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 0, 'Create_time': 0.0028545611719111193}
+{'Time': 0.10419148277475596, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 7, 'Create_time': 0.10419148277475596}
+{'Time': 0.004281841757866679, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10014543882808889, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 0, 'Create_time': 0.004281841757866679}
+{'Time': 0.10561876336071152, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 7, 'Create_time': 0.10561876336071152}
+{'Time': 0.0057091223438222385, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10021815824213333, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 0, 'Create_time': 0.0057091223438222385}
+{'Time': 0.10704604394666709, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 7, 'Create_time': 0.10704604394666709}
+{'Time': 0.007136402929777798, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10029087765617777, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 0, 'Create_time': 0.007136402929777798}
+{'Time': 0.10847332453262265, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 7, 'Create_time': 0.10847332453262265}
+{'Time': 0.008563683515733358, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.1003635970702222, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 0, 'Create_time': 0.008563683515733358}
+{'Time': 0.10990060511857822, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 7, 'Create_time': 0.10990060511857822}
+{'Time': 0.009990964101688917, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10043631648426665, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 0, 'Create_time': 0.009990964101688917}
+{'Time': 0.11132788570453378, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 7, 'Create_time': 0.11132788570453378}
+{'Time': 0.011418244687644477, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10050903589831109, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 0, 'Create_time': 0.011418244687644477}
+{'Time': 0.11275516629048934, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 7, 'Create_time': 0.11275516629048934}
+{'Time': 0.012845525273600037, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10058175531235553, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 0, 'Create_time': 0.012845525273600037}
+{'Time': 0.11418244687644491, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 8, 'Create_time': 0.11418244687644491}
+{'Time': 0.014272805859555596, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10065447472639998, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 1, 'Create_time': 0.014272805859555596}
+{'Time': 0.11560972746240047, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 8, 'Create_time': 0.11560972746240047}
+{'Time': 0.015700086445511158, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10072719414044441, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 1, 'Create_time': 0.015700086445511158}
+{'Time': 0.11703700804835604, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 8, 'Create_time': 0.11703700804835604}
+{'Time': 0.017127367031466716, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10079991355448885, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 1, 'Create_time': 0.017127367031466716}
+{'Time': 0.1184642886343116, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 8, 'Create_time': 0.1184642886343116}
+{'Time': 0.018554647617422274, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.1008726329685333, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 1, 'Create_time': 0.018554647617422274}
+{'Time': 0.11989156922026717, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 8, 'Create_time': 0.11989156922026717}
+{'Time': 0.01998192820337783, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10094535238257774, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 1, 'Create_time': 0.01998192820337783}
+{'Time': 0.12131884980622273, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 8, 'Create_time': 0.12131884980622273}
+{'Time': 0.02140920878933339, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10101807179662217, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 1, 'Create_time': 0.02140920878933339}
+{'Time': 0.1227461303921783, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 8, 'Create_time': 0.1227461303921783}
+{'Time': 0.022836489375288947, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10109079121066662, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 1, 'Create_time': 0.022836489375288947}
+{'Time': 0.12417341097813386, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 8, 'Create_time': 0.12417341097813386}
+{'Time': 0.024263769961244505, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10116351062471106, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 1, 'Create_time': 0.024263769961244505}
+{'Time': 0.12560069156408943, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 8, 'Create_time': 0.12560069156408943}
+{'Time': 0.025691050547200063, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10123623003875551, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 1, 'Create_time': 0.025691050547200063}
+{'Time': 0.127027972150045, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 8, 'Create_time': 0.127027972150045}
+{'Time': 0.02711833113315562, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10130894945279995, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 1, 'Create_time': 0.02711833113315562}
+{'Time': 0.12845525273600056, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 9, 'Create_time': 0.12845525273600056}
+{'Time': 0.12988253332195612, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 9, 'Create_time': 0.12988253332195612}
+{'Time': 0.02854561171911118, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10138166886684438, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 2, 'Create_time': 0.02854561171911118}
+{'Time': 0.1313098139079117, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 9, 'Create_time': 0.1313098139079117}
+{'Time': 0.029972892305066737, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10145438828088883, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 2, 'Create_time': 0.029972892305066737}
+{'Time': 0.13273709449386725, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 9, 'Create_time': 0.13273709449386725}
+{'Time': 0.031400172891022295, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10152710769493327, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 2, 'Create_time': 0.031400172891022295}
+{'Time': 0.13416437507982282, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 9, 'Create_time': 0.13416437507982282}
+{'Time': 0.03282745347697785, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10159982710897772, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 2, 'Create_time': 0.03282745347697785}
+{'Time': 0.13559165566577838, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 9, 'Create_time': 0.13559165566577838}
+{'Time': 0.03425473406293341, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10167254652302216, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 2, 'Create_time': 0.03425473406293341}
+{'Time': 0.13701893625173395, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 9, 'Create_time': 0.13701893625173395}
+{'Time': 0.03568201464888897, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10174526593706659, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 2, 'Create_time': 0.03568201464888897}
+{'Time': 0.1384462168376895, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 9, 'Create_time': 0.1384462168376895}
+{'Time': 0.13987349742364508, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 9, 'Create_time': 0.13987349742364508}
+{'Time': 0.14130077800960064, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 9, 'Create_time': 0.14130077800960064}
+{'Time': 0.1427280585955562, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 10, 'Create_time': 0.1427280585955562}
+{'Time': 0.14415533918151177, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 10, 'Create_time': 0.14415533918151177}
+{'Time': 0.14558261976746734, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 10, 'Create_time': 0.14558261976746734}
+{'Time': 0.1470099003534229, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 10, 'Create_time': 0.1470099003534229}
+{'Time': 0.14843718093937847, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 10, 'Create_time': 0.14843718093937847}
+{'Time': 0.14986446152533403, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 10, 'Create_time': 0.14986446152533403}
+{'Time': 0.1512917421112896, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 10, 'Create_time': 0.1512917421112896}
+{'Time': 0.15271902269724516, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 10, 'Create_time': 0.15271902269724516}
+{'Time': 0.15414630328320073, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 10, 'Create_time': 0.15414630328320073}
+{'Time': 0.1555735838691563, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 10, 'Create_time': 0.1555735838691563}
+{'Time': 0.15700086445511185, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 11, 'Create_time': 0.15700086445511185}
+{'Time': 0.15842814504106742, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 11, 'Create_time': 0.15842814504106742}
+{'Time': 0.15985542562702298, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 11, 'Create_time': 0.15985542562702298}
+{'Time': 0.16128270621297855, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 11, 'Create_time': 0.16128270621297855}
+{'Time': 0.16270998679893411, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 11, 'Create_time': 0.16270998679893411}
+{'Time': 0.16413726738488968, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 11, 'Create_time': 0.16413726738488968}
+{'Time': 0.16556454797084524, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 11, 'Create_time': 0.16556454797084524}
+{'Time': 0.1669918285568008, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 11, 'Create_time': 0.1669918285568008}
+{'Time': 0.16841910914275637, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 11, 'Create_time': 0.16841910914275637}
+{'Time': 0.16984638972871194, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 11, 'Create_time': 0.16984638972871194}
+{'Time': 0.1712736703146675, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 12, 'Create_time': 0.1712736703146675}
+{'Time': 0.17270095090062307, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 12, 'Create_time': 0.17270095090062307}
+{'Time': 0.17412823148657863, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 12, 'Create_time': 0.17412823148657863}
+{'Time': 0.1755555120725342, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 12, 'Create_time': 0.1755555120725342}
+{'Time': 0.17698279265848976, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 12, 'Create_time': 0.17698279265848976}
+{'Time': 0.17841007324444533, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 12, 'Create_time': 0.17841007324444533}
+{'Time': 0.1798373538304009, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 12, 'Create_time': 0.1798373538304009}
+{'Time': 0.18126463441635646, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 12, 'Create_time': 0.18126463441635646}
+{'Time': 0.18269191500231202, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 12, 'Create_time': 0.18269191500231202}
+{'Time': 0.1841191955882676, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 12, 'Create_time': 0.1841191955882676}
+{'Time': 0.18554647617422315, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 13, 'Create_time': 0.18554647617422315}
+{'Time': 0.18697375676017872, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 13, 'Create_time': 0.18697375676017872}
+{'Time': 0.18840103734613428, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 13, 'Create_time': 0.18840103734613428}
+{'Time': 0.18982831793208985, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 13, 'Create_time': 0.18982831793208985}
+{'Time': 0.1912555985180454, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 13, 'Create_time': 0.1912555985180454}
+{'Time': 0.19268287910400098, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 13, 'Create_time': 0.19268287910400098}
+{'Time': 0.19411015968995654, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 13, 'Create_time': 0.19411015968995654}
+{'Time': 0.1955374402759121, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 13, 'Create_time': 0.1955374402759121}
+{'Time': 0.19696472086186767, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 13, 'Create_time': 0.19696472086186767}
+{'Time': 0.19839200144782324, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 13, 'Create_time': 0.19839200144782324}
+{'Time': 0.1998192820337788, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 14, 'Create_time': 0.1998192820337788}
+{'Time': 0.20124656261973436, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 14, 'Create_time': 0.20124656261973436}
+{'Time': 0.20267384320568993, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 14, 'Create_time': 0.20267384320568993}
+{'Time': 0.2041011237916455, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 14, 'Create_time': 0.2041011237916455}
+{'Time': 0.20552840437760106, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 14, 'Create_time': 0.20552840437760106}
+{'Time': 0.20695568496355662, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 14, 'Create_time': 0.20695568496355662}
+{'Time': 0.10276420218880039, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10516307839715516, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 7, 'Create_time': 0.10276420218880039}
+{'Time': 0.2083829655495122, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 14, 'Create_time': 0.2083829655495122}
+{'Time': 0.10419148277475596, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.1052357978111996, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 7, 'Create_time': 0.10419148277475596}
+{'Time': 0.20981024613546775, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 14, 'Create_time': 0.20981024613546775}
+{'Time': 0.10561876336071152, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10530851722524404, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 7, 'Create_time': 0.10561876336071152}
+{'Time': 0.21123752672142332, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 14, 'Create_time': 0.21123752672142332}
+{'Time': 0.10704604394666709, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10538123663928847, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 7, 'Create_time': 0.10704604394666709}
+{'Time': 0.21266480730737888, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 14, 'Create_time': 0.21266480730737888}
+{'Time': 0.10847332453262265, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.1054539560533329, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 7, 'Create_time': 0.10847332453262265}
+{'Time': 0.21409208789333445, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 15, 'Create_time': 0.21409208789333445}
+{'Time': 0.10990060511857822, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10552667546737733, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 7, 'Create_time': 0.10990060511857822}
+{'Time': 0.21551936847929, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 15, 'Create_time': 0.21551936847929}
+{'Time': 0.11132788570453378, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10559939488142177, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 7, 'Create_time': 0.11132788570453378}
+{'Time': 0.21694664906524558, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 15, 'Create_time': 0.21694664906524558}
+{'Time': 0.21837392965120114, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 15, 'Create_time': 0.21837392965120114}
+{'Time': 0.11275516629048934, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.1056721142954662, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 7, 'Create_time': 0.11275516629048934}
+{'Time': 0.2198012102371567, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 15, 'Create_time': 0.2198012102371567}
+{'Time': 0.11418244687644491, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10574483370951064, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 8, 'Create_time': 0.11418244687644491}
+{'Time': 0.22122849082311227, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 15, 'Create_time': 0.22122849082311227}
+{'Time': 0.11560972746240047, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10581755312355508, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 8, 'Create_time': 0.11560972746240047}
+{'Time': 0.22265577140906784, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 15, 'Create_time': 0.22265577140906784}
+{'Time': 0.11703700804835604, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10589027253759951, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 8, 'Create_time': 0.11703700804835604}
+{'Time': 0.2240830519950234, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 15, 'Create_time': 0.2240830519950234}
+{'Time': 0.1184642886343116, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10596299195164394, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 8, 'Create_time': 0.1184642886343116}
+{'Time': 0.22551033258097897, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 15, 'Create_time': 0.22551033258097897}
+{'Time': 0.11989156922026717, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10603571136568837, 'Propagation_delay': 0.0002, 'Drop': 1, 'Package_id': 4, 'Block_id': 8, 'Create_time': 0.11989156922026717}
+{'Time': 0.12131884980622273, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10460843077973281, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 8, 'Create_time': 0.12131884980622273}
+{'Time': 0.22693761316693453, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 15, 'Create_time': 0.22693761316693453}
+{'Time': 0.1227461303921783, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10468115019377724, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 8, 'Create_time': 0.1227461303921783}
+{'Time': 0.2283648937528901, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 16, 'Create_time': 0.2283648937528901}
+{'Time': 0.12417341097813386, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10475386960782168, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 8, 'Create_time': 0.12417341097813386}
+{'Time': 0.22979217433884566, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 16, 'Create_time': 0.22979217433884566}
+{'Time': 0.12560069156408943, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10482658902186612, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 8, 'Create_time': 0.12560069156408943}
+{'Time': 0.23121945492480123, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 16, 'Create_time': 0.23121945492480123}
+{'Time': 0.127027972150045, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10489930843591055, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 8, 'Create_time': 0.127027972150045}
+{'Time': 0.2326467355107568, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 16, 'Create_time': 0.2326467355107568}
+{'Time': 0.12845525273600056, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10497202784995499, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 9, 'Create_time': 0.12845525273600056}
+{'Time': 0.23407401609671236, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 16, 'Create_time': 0.23407401609671236}
+{'Time': 0.23550129668266792, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 16, 'Create_time': 0.23550129668266792}
+{'Time': 0.1313098139079117, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10511746667804386, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 9, 'Create_time': 0.1313098139079117}
+{'Time': 0.23692857726862349, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 16, 'Create_time': 0.23692857726862349}
+{'Time': 0.13273709449386725, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10519018609208829, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 9, 'Create_time': 0.13273709449386725}
+{'Time': 0.23835585785457905, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 16, 'Create_time': 0.23835585785457905}
+{'Time': 0.13416437507982282, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10526290550613272, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 9, 'Create_time': 0.13416437507982282}
+{'Time': 0.23978313844053462, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 16, 'Create_time': 0.23978313844053462}
+{'Time': 0.13559165566577838, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10533562492017716, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 9, 'Create_time': 0.13559165566577838}
+{'Time': 0.24121041902649018, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 16, 'Create_time': 0.24121041902649018}
+{'Time': 0.13701893625173395, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.1054083443342216, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 9, 'Create_time': 0.13701893625173395}
+{'Time': 0.24263769961244575, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 17, 'Create_time': 0.24263769961244575}
+{'Time': 0.1384462168376895, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10548106374826603, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 9, 'Create_time': 0.1384462168376895}
+{'Time': 0.2440649801984013, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 17, 'Create_time': 0.2440649801984013}
+{'Time': 0.24549226078435687, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 17, 'Create_time': 0.24549226078435687}
+{'Time': 0.24691954137031244, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 17, 'Create_time': 0.24691954137031244}
+{'Time': 0.248346821956268, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 17, 'Create_time': 0.248346821956268}
+{'Time': 0.24977410254222357, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 17, 'Create_time': 0.24977410254222357}
+{'Time': 0.25120138312817913, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 17, 'Create_time': 0.25120138312817913}
+{'Time': 0.25262866371413467, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 17, 'Create_time': 0.25262866371413467}
+{'Time': 0.2540559443000902, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 17, 'Create_time': 0.2540559443000902}
+{'Time': 0.25548322488604575, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 17, 'Create_time': 0.25548322488604575}
+{'Time': 0.2569105054720013, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 18, 'Create_time': 0.2569105054720013}
+{'Time': 0.2583377860579568, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 18, 'Create_time': 0.2583377860579568}
+{'Time': 0.25976506664391236, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 18, 'Create_time': 0.25976506664391236}
+{'Time': 0.2611923472298679, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 18, 'Create_time': 0.2611923472298679}
+{'Time': 0.26261962781582343, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 18, 'Create_time': 0.26261962781582343}
+{'Time': 0.26404690840177897, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 18, 'Create_time': 0.26404690840177897}
+{'Time': 0.2654741889877345, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 18, 'Create_time': 0.2654741889877345}
+{'Time': 0.26690146957369004, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 18, 'Create_time': 0.26690146957369004}
+{'Time': 0.2683287501596456, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 18, 'Create_time': 0.2683287501596456}
+{'Time': 0.2697560307456011, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 18, 'Create_time': 0.2697560307456011}
+{'Time': 0.27118331133155665, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 19, 'Create_time': 0.27118331133155665}
+{'Time': 0.2726105919175122, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 19, 'Create_time': 0.2726105919175122}
+{'Time': 0.2740378725034677, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 19, 'Create_time': 0.2740378725034677}
+{'Time': 0.27546515308942326, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 19, 'Create_time': 0.27546515308942326}
+{'Time': 0.2768924336753788, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 19, 'Create_time': 0.2768924336753788}
+{'Time': 0.27831971426133434, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 19, 'Create_time': 0.27831971426133434}
+{'Time': 0.2797469948472899, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 19, 'Create_time': 0.2797469948472899}
+{'Time': 0.2811742754332454, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 19, 'Create_time': 0.2811742754332454}
+{'Time': 0.28260155601920095, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 19, 'Create_time': 0.28260155601920095}
+{'Time': 0.2840288366051565, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 19, 'Create_time': 0.2840288366051565}
+{'Time': 0.285456117191112, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 20, 'Create_time': 0.285456117191112}
+{'Time': 0.28688339777706756, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 20, 'Create_time': 0.28688339777706756}
+{'Time': 0.2883106783630231, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 20, 'Create_time': 0.2883106783630231}
+{'Time': 0.28973795894897864, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 20, 'Create_time': 0.28973795894897864}
+{'Time': 0.2911652395349342, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 20, 'Create_time': 0.2911652395349342}
+{'Time': 0.2925925201208897, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 20, 'Create_time': 0.2925925201208897}
+{'Time': 0.29401980070684525, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 20, 'Create_time': 0.29401980070684525}
+{'Time': 0.2954470812928008, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 20, 'Create_time': 0.2954470812928008}
+{'Time': 0.2968743618787563, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 20, 'Create_time': 0.2968743618787563}
+{'Time': 0.29830164246471186, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 20, 'Create_time': 0.29830164246471186}
+{'Time': 0.2997289230506674, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 21, 'Create_time': 0.2997289230506674}
+{'Time': 0.30115620363662293, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 21, 'Create_time': 0.30115620363662293}
+{'Time': 0.30258348422257847, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 21, 'Create_time': 0.30258348422257847}
+{'Time': 0.304010764808534, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 21, 'Create_time': 0.304010764808534}
+{'Time': 0.30543804539448954, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 21, 'Create_time': 0.30543804539448954}
+{'Time': 0.3068653259804451, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 21, 'Create_time': 0.3068653259804451}
+{'Time': 0.3082926065664006, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 21, 'Create_time': 0.3082926065664006}
+{'Time': 0.30971988715235615, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 21, 'Create_time': 0.30971988715235615}
+{'Time': 0.3111471677383117, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 21, 'Create_time': 0.3111471677383117}
+{'Time': 0.31257444832426723, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 21, 'Create_time': 0.31257444832426723}
+{'Time': 0.31400172891022277, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 22, 'Create_time': 0.31400172891022277}
+{'Time': 0.2083829655495122, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10604431503644333, 'Propagation_delay': 0.0002, 'Drop': 1, 'Package_id': 6, 'Block_id': 14, 'Create_time': 0.2083829655495122}
+{'Time': 0.20981024613546775, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10461703445048777, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 14, 'Create_time': 0.20981024613546775}
+{'Time': 0.3154290094961783, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 22, 'Create_time': 0.3154290094961783}
+{'Time': 0.21123752672142332, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.1046897538645322, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 14, 'Create_time': 0.21123752672142332}
+{'Time': 0.31685629008213384, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 22, 'Create_time': 0.31685629008213384}
+{'Time': 0.21266480730737888, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10476247327857664, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 14, 'Create_time': 0.21266480730737888}
+{'Time': 0.3182835706680894, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 22, 'Create_time': 0.3182835706680894}
+{'Time': 0.21409208789333445, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10483519269262108, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 15, 'Create_time': 0.21409208789333445}
+{'Time': 0.3197108512540449, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 22, 'Create_time': 0.3197108512540449}
+{'Time': 0.21551936847929, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.1049079121066655, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 15, 'Create_time': 0.21551936847929}
+{'Time': 0.32113813184000045, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 22, 'Create_time': 0.32113813184000045}
+{'Time': 0.21694664906524558, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10498063152070994, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 15, 'Create_time': 0.21694664906524558}
+{'Time': 0.322565412425956, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 22, 'Create_time': 0.322565412425956}
+{'Time': 0.3239926930119115, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 22, 'Create_time': 0.3239926930119115}
+{'Time': 0.2198012102371567, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10512607034879881, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 15, 'Create_time': 0.2198012102371567}
+{'Time': 0.32541997359786706, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 22, 'Create_time': 0.32541997359786706}
+{'Time': 0.22122849082311227, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10519878976284325, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 15, 'Create_time': 0.22122849082311227}
+{'Time': 0.3268472541838226, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 22, 'Create_time': 0.3268472541838226}
+{'Time': 0.22265577140906784, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10527150917688768, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 15, 'Create_time': 0.22265577140906784}
+{'Time': 0.32827453476977814, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 23, 'Create_time': 0.32827453476977814}
+{'Time': 0.2240830519950234, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10534422859093212, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 15, 'Create_time': 0.2240830519950234}
+{'Time': 0.3297018153557337, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 23, 'Create_time': 0.3297018153557337}
+{'Time': 0.22551033258097897, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10541694800497656, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 15, 'Create_time': 0.22551033258097897}
+{'Time': 0.3311290959416892, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 23, 'Create_time': 0.3311290959416892}
+{'Time': 0.22693761316693453, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.105489667419021, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 15, 'Create_time': 0.22693761316693453}
+{'Time': 0.33255637652764475, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 23, 'Create_time': 0.33255637652764475}
+{'Time': 0.2283648937528901, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10556238683306542, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 16, 'Create_time': 0.2283648937528901}
+{'Time': 0.3339836571136003, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 23, 'Create_time': 0.3339836571136003}
+{'Time': 0.3354109376995558, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 23, 'Create_time': 0.3354109376995558}
+{'Time': 0.22979217433884566, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10563510624710985, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 16, 'Create_time': 0.22979217433884566}
+{'Time': 0.33683821828551136, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 23, 'Create_time': 0.33683821828551136}
+{'Time': 0.23121945492480123, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10570782566115429, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 16, 'Create_time': 0.23121945492480123}
+{'Time': 0.3382654988714669, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 23, 'Create_time': 0.3382654988714669}
+{'Time': 0.2326467355107568, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10578054507519873, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 16, 'Create_time': 0.2326467355107568}
+{'Time': 0.33969277945742243, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 23, 'Create_time': 0.33969277945742243}
+{'Time': 0.23407401609671236, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10585326448924316, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 16, 'Create_time': 0.23407401609671236}
+{'Time': 0.34112006004337797, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 23, 'Create_time': 0.34112006004337797}
+{'Time': 0.23550129668266792, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.1059259839032876, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 16, 'Create_time': 0.23550129668266792}
+{'Time': 0.3425473406293335, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 24, 'Create_time': 0.3425473406293335}
+{'Time': 0.23692857726862349, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10599870331733204, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 16, 'Create_time': 0.23692857726862349}
+{'Time': 0.34397462121528904, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 24, 'Create_time': 0.34397462121528904}
+{'Time': 0.23835585785457905, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10607142273137646, 'Propagation_delay': 0.0002, 'Drop': 1, 'Package_id': 7, 'Block_id': 16, 'Create_time': 0.23835585785457905}
+{'Time': 0.23978313844053462, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.1046441421454209, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 16, 'Create_time': 0.23978313844053462}
+{'Time': 0.3454019018012446, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 24, 'Create_time': 0.3454019018012446}
+{'Time': 0.24121041902649018, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10471686155946533, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 16, 'Create_time': 0.24121041902649018}
+{'Time': 0.3468291823872001, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 24, 'Create_time': 0.3468291823872001}
+{'Time': 0.24263769961244575, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10478958097350977, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 17, 'Create_time': 0.24263769961244575}
+{'Time': 0.34825646297315566, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 24, 'Create_time': 0.34825646297315566}
+{'Time': 0.2440649801984013, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.1048623003875542, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 17, 'Create_time': 0.2440649801984013}
+{'Time': 0.3496837435591112, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 24, 'Create_time': 0.3496837435591112}
+{'Time': 0.35111102414506673, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 24, 'Create_time': 0.35111102414506673}
+{'Time': 0.35253830473102227, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 24, 'Create_time': 0.35253830473102227}
+{'Time': 0.3539655853169778, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 24, 'Create_time': 0.3539655853169778}
+{'Time': 0.35539286590293334, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 24, 'Create_time': 0.35539286590293334}
+{'Time': 0.3568201464888889, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 25, 'Create_time': 0.3568201464888889}
+{'Time': 0.3582474270748444, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 25, 'Create_time': 0.3582474270748444}
+{'Time': 0.35967470766079995, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 25, 'Create_time': 0.35967470766079995}
+{'Time': 0.3611019882467555, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 25, 'Create_time': 0.3611019882467555}
+{'Time': 0.362529268832711, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 25, 'Create_time': 0.362529268832711}
+{'Time': 0.36395654941866656, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 25, 'Create_time': 0.36395654941866656}
+{'Time': 0.3653838300046221, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 25, 'Create_time': 0.3653838300046221}
+{'Time': 0.36681111059057764, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 25, 'Create_time': 0.36681111059057764}
+{'Time': 0.3682383911765332, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 25, 'Create_time': 0.3682383911765332}
+{'Time': 0.3696656717624887, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 25, 'Create_time': 0.3696656717624887}
+{'Time': 0.37109295234844425, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 26, 'Create_time': 0.37109295234844425}
+{'Time': 0.3725202329343998, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 26, 'Create_time': 0.3725202329343998}
+{'Time': 0.3739475135203553, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 26, 'Create_time': 0.3739475135203553}
+{'Time': 0.37537479410631086, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 26, 'Create_time': 0.37537479410631086}
+{'Time': 0.3768020746922664, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 26, 'Create_time': 0.3768020746922664}
+{'Time': 0.37822935527822193, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 26, 'Create_time': 0.37822935527822193}
+{'Time': 0.37965663586417747, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 26, 'Create_time': 0.37965663586417747}
+{'Time': 0.381083916450133, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 26, 'Create_time': 0.381083916450133}
+{'Time': 0.38251119703608855, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 26, 'Create_time': 0.38251119703608855}
+{'Time': 0.3839384776220441, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 26, 'Create_time': 0.3839384776220441}
+{'Time': 0.3853657582079996, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 27, 'Create_time': 0.3853657582079996}
+{'Time': 0.38679303879395516, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 27, 'Create_time': 0.38679303879395516}
+{'Time': 0.3882203193799107, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 27, 'Create_time': 0.3882203193799107}
+{'Time': 0.38964759996586623, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 27, 'Create_time': 0.38964759996586623}
+{'Time': 0.39107488055182177, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 27, 'Create_time': 0.39107488055182177}
+{'Time': 0.3925021611377773, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 27, 'Create_time': 0.3925021611377773}
+{'Time': 0.39392944172373284, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 27, 'Create_time': 0.39392944172373284}
+{'Time': 0.3953567223096884, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 27, 'Create_time': 0.3953567223096884}
+{'Time': 0.3967840028956439, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 27, 'Create_time': 0.3967840028956439}
+{'Time': 0.39821128348159945, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 27, 'Create_time': 0.39821128348159945}
+{'Time': 0.399638564067555, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 28, 'Create_time': 0.399638564067555}
+{'Time': 0.40106584465351053, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 28, 'Create_time': 0.40106584465351053}
+{'Time': 0.40249312523946607, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 28, 'Create_time': 0.40249312523946607}
+{'Time': 0.4039204058254216, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 28, 'Create_time': 0.4039204058254216}
+{'Time': 0.40534768641137714, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 28, 'Create_time': 0.40534768641137714}
+{'Time': 0.4067749669973327, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 28, 'Create_time': 0.4067749669973327}
+{'Time': 0.4082022475832882, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 28, 'Create_time': 0.4082022475832882}
+{'Time': 0.40962952816924375, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 28, 'Create_time': 0.40962952816924375}
+{'Time': 0.4110568087551993, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 28, 'Create_time': 0.4110568087551993}
+{'Time': 0.4124840893411548, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 28, 'Create_time': 0.4124840893411548}
+{'Time': 0.41391136992711036, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 29, 'Create_time': 0.41391136992711036}
+{'Time': 0.4153386505130659, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 29, 'Create_time': 0.4153386505130659}
+{'Time': 0.41676593109902144, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 29, 'Create_time': 0.41676593109902144}
+{'Time': 0.418193211684977, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 29, 'Create_time': 0.418193211684977}
+{'Time': 0.4196204922709325, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 29, 'Create_time': 0.4196204922709325}
+{'Time': 0.3154290094961783, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10549827108977719, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 22, 'Create_time': 0.3154290094961783}
+{'Time': 0.42104777285688805, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 29, 'Create_time': 0.42104777285688805}
+{'Time': 0.31685629008213384, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10557099050382165, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 22, 'Create_time': 0.31685629008213384}
+{'Time': 0.4224750534428436, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 29, 'Create_time': 0.4224750534428436}
+{'Time': 0.4239023340287991, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 29, 'Create_time': 0.4239023340287991}
+{'Time': 0.3182835706680894, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10564370991786612, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 22, 'Create_time': 0.3182835706680894}
+{'Time': 0.42532961461475466, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 29, 'Create_time': 0.42532961461475466}
+{'Time': 0.3197108512540449, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10571642933191058, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 22, 'Create_time': 0.3197108512540449}
+{'Time': 0.4267568952007102, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 29, 'Create_time': 0.4267568952007102}
+{'Time': 0.32113813184000045, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10578914874595505, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 22, 'Create_time': 0.32113813184000045}
+{'Time': 0.42818417578666573, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 30, 'Create_time': 0.42818417578666573}
+{'Time': 0.322565412425956, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10586186815999951, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 22, 'Create_time': 0.322565412425956}
+{'Time': 0.42961145637262127, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 30, 'Create_time': 0.42961145637262127}
+{'Time': 0.3239926930119115, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10593458757404396, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 22, 'Create_time': 0.3239926930119115}
+{'Time': 0.4310387369585768, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 30, 'Create_time': 0.4310387369585768}
+{'Time': 0.32541997359786706, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10600730698808843, 'Propagation_delay': 0.0002, 'Drop': 1, 'Package_id': 8, 'Block_id': 22, 'Create_time': 0.32541997359786706}
+{'Time': 0.3268472541838226, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10458002640213289, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 22, 'Create_time': 0.3268472541838226}
+{'Time': 0.43246601754453234, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 30, 'Create_time': 0.43246601754453234}
+{'Time': 0.32827453476977814, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10465274581617735, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 23, 'Create_time': 0.32827453476977814}
+{'Time': 0.4338932981304879, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 30, 'Create_time': 0.4338932981304879}
+{'Time': 0.3297018153557337, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10472546523022182, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 23, 'Create_time': 0.3297018153557337}
+{'Time': 0.4353205787164434, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 30, 'Create_time': 0.4353205787164434}
+{'Time': 0.3311290959416892, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10479818464426628, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 23, 'Create_time': 0.3311290959416892}
+{'Time': 0.43674785930239896, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 30, 'Create_time': 0.43674785930239896}
+{'Time': 0.33255637652764475, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10487090405831075, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 23, 'Create_time': 0.33255637652764475}
+{'Time': 0.4381751398883545, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 30, 'Create_time': 0.4381751398883545}
+{'Time': 0.3339836571136003, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10494362347235521, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 23, 'Create_time': 0.3339836571136003}
+{'Time': 0.43960242047431003, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 30, 'Create_time': 0.43960242047431003}
+{'Time': 0.44102970106026557, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 30, 'Create_time': 0.44102970106026557}
+{'Time': 0.33683821828551136, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10508906230044412, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 23, 'Create_time': 0.33683821828551136}
+{'Time': 0.4424569816462211, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 31, 'Create_time': 0.4424569816462211}
+{'Time': 0.3382654988714669, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10516178171448859, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 23, 'Create_time': 0.3382654988714669}
+{'Time': 0.44388426223217664, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 31, 'Create_time': 0.44388426223217664}
+{'Time': 0.33969277945742243, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10523450112853305, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 23, 'Create_time': 0.33969277945742243}
+{'Time': 0.4453115428181322, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 31, 'Create_time': 0.4453115428181322}
+{'Time': 0.34112006004337797, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10530722054257752, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 23, 'Create_time': 0.34112006004337797}
+{'Time': 0.4467388234040877, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 31, 'Create_time': 0.4467388234040877}
+{'Time': 0.3425473406293335, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10537993995662198, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 24, 'Create_time': 0.3425473406293335}
+{'Time': 0.44816610399004325, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 31, 'Create_time': 0.44816610399004325}
+{'Time': 0.34397462121528904, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10545265937066645, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 24, 'Create_time': 0.34397462121528904}
+{'Time': 0.4495933845759988, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 31, 'Create_time': 0.4495933845759988}
+{'Time': 0.3454019018012446, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10552537878471091, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 24, 'Create_time': 0.3454019018012446}
+{'Time': 0.4510206651619543, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 31, 'Create_time': 0.4510206651619543}
+{'Time': 0.3468291823872001, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10559809819875537, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 24, 'Create_time': 0.3468291823872001}
+{'Time': 0.45244794574790986, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 31, 'Create_time': 0.45244794574790986}
+{'Time': 0.4538752263338654, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 31, 'Create_time': 0.4538752263338654}
+{'Time': 0.34825646297315566, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10567081761279982, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 24, 'Create_time': 0.34825646297315566}
+{'Time': 0.45530250691982094, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 31, 'Create_time': 0.45530250691982094}
+{'Time': 0.3496837435591112, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10574353702684429, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 24, 'Create_time': 0.3496837435591112}
+{'Time': 0.4567297875057765, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 32, 'Create_time': 0.4567297875057765}
+{'Time': 0.35111102414506673, 'Type': 'A', 'Position': 1, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.10581625644088875, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 24, 'Create_time': 0.35111102414506673}
+{'Time': 0.458157068091732, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 32, 'Create_time': 0.458157068091732}
+{'Time': 0.45958434867768755, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 32, 'Create_time': 0.45958434867768755}
+{'Time': 0.4610116292636431, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 32, 'Create_time': 0.4610116292636431}
+{'Time': 0.4624389098495986, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 32, 'Create_time': 0.4624389098495986}
+{'Time': 0.46386619043555416, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 32, 'Create_time': 0.46386619043555416}
+{'Time': 0.4652934710215097, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 32, 'Create_time': 0.4652934710215097}
+{'Time': 0.46672075160746523, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 32, 'Create_time': 0.46672075160746523}
+{'Time': 0.46814803219342077, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 32, 'Create_time': 0.46814803219342077}
+{'Time': 0.4695753127793763, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 32, 'Create_time': 0.4695753127793763}
+{'Time': 0.47100259336533185, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 33, 'Create_time': 0.47100259336533185}
+{'Time': 0.4724298739512874, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 33, 'Create_time': 0.4724298739512874}
+{'Time': 0.4738571545372429, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 33, 'Create_time': 0.4738571545372429}
+{'Time': 0.47528443512319846, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 33, 'Create_time': 0.47528443512319846}
+{'Time': 0.476711715709154, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 33, 'Create_time': 0.476711715709154}
+{'Time': 0.47813899629510953, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 33, 'Create_time': 0.47813899629510953}
+{'Time': 0.47956627688106507, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 33, 'Create_time': 0.47956627688106507}
+{'Time': 0.4809935574670206, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 33, 'Create_time': 0.4809935574670206}
+{'Time': 0.48242083805297614, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 33, 'Create_time': 0.48242083805297614}
+{'Time': 0.4838481186389317, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 33, 'Create_time': 0.4838481186389317}
+{'Time': 0.4852753992248872, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 34, 'Create_time': 0.4852753992248872}
+{'Time': 0.48670267981084275, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 34, 'Create_time': 0.48670267981084275}
+{'Time': 0.4881299603967983, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 2, 'Block_id': 34, 'Create_time': 0.4881299603967983}
+{'Time': 0.4895572409827538, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 3, 'Block_id': 34, 'Create_time': 0.4895572409827538}
+{'Time': 0.49098452156870936, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 4, 'Block_id': 34, 'Create_time': 0.49098452156870936}
+{'Time': 0.4924118021546649, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 5, 'Block_id': 34, 'Create_time': 0.4924118021546649}
+{'Time': 0.49383908274062044, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 6, 'Block_id': 34, 'Create_time': 0.49383908274062044}
+{'Time': 0.495266363326576, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 7, 'Block_id': 34, 'Create_time': 0.495266363326576}
+{'Time': 0.4966936439125315, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 8, 'Block_id': 34, 'Create_time': 0.4966936439125315}
+{'Time': 0.49812092449848705, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 9, 'Block_id': 34, 'Create_time': 0.49812092449848705}
+{'Time': 0.4995482050844426, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 0, 'Block_id': 35, 'Create_time': 0.4995482050844426}
+{'Time': 0.5009754856703982, 'Type': 'S', 'Position': 0, 'Send_delay': 0.0014272805859555596, 'Queue_delay': 0.0, 'Propagation_delay': 0.0002, 'Drop': 0, 'Package_id': 1, 'Block_id': 35, 'Create_time': 0.5009754856703982}
