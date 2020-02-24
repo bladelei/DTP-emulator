@@ -612,8 +612,9 @@ if __name__ == '__main__':
         block_file=block_file,
         trace_file=trace_file
     )
+
     print(emulator.run_for_dur(0.5))
     emulator.dump_events_to_file(log_file)
     emulator.print_debug()
     print(emulator.senders[0].rtt_samples)
-    # analyze_pcc_emulator(log_package_file, trace_file)
+    analyze_pcc_emulator(log_package_file, trace_file)

@@ -10,6 +10,7 @@
 
 import time, json
 from matplotlib import pyplot as plt
+import numpy as np
 
 def get_ms_time(rate=1000):
 
@@ -115,46 +116,65 @@ def analyze_pcc_emulator(log_file, trace_file=None, rows=20):
         for line in f.readlines():
             plt_data.append(json.loads(line.replace("'", '"')))
 
+    plt_data = filter(lambda x:x['Type']=='A', plt_data)
     # priority by package id
-    plt_data = sorted(plt_data, key=lambda x:x["Package_id"])
-
-    plt.figure(figsize=(20, 10))
-    plt.title("Block's Changing Process", fontsize=30)
-    plt.xlabel("Time / ms", fontsize=20)
-    plt.ylabel("Block Id", fontsize=20)
+    plt_data = sorted(plt_data, key=lambda x:int(x["Package_id"])+10*int(x["Block_id"]))
 
     labels = ["Queue time", "Transmission time", "Propagation time",
               "Not created", "Miss deadline"]
     max_time = plt_data[-1]["Time"]
-    fir_drop = True
-    linewidth = 5
-    last_y = -1
 
-    for idx in range(min(rows, len(plt_data))):
-        # print(plt_data[idx])
-        used_label = labels if not idx else [None] * 5
-        y = plt_data[idx]["Package_id"]
-        last_x = 0 if y != last_y else x
-        x = plt_data[idx]["Time"]
-        last_y = y
+    pic_nums = 3
+    data_lantency = []
+    data_finish_time = []
+    data_drop = []
+    data_sum_time = []
+    data_miss_ddl = []
+    for idx, item in enumerate(plt_data):
+        if item["Type"] == 'A':
+            data_lantency.append(item["Queue_delay"])
+            data_finish_time.append(item["Time"])
+            data_sum_time.append(item["Send_delay"] + item["Queue_delay"] + item["Propagation_delay"])
+            if item["Drop"] == 1:
+                data_drop.append(idx)
+            if item["Deadline"] < data_sum_time[-1]:
+                data_miss_ddl.append(idx)
 
-        # print(last_x, x, plt_data[idx]["Life"])
-        plt.plot([last_x, x], [y] * 2, c='black',
-                 label=used_label[3], linewidth=linewidth)
+    plt.figure(figsize=(20, 10))
+    # plot latency distribution
+    ax = plt.subplot(pic_nums, 1, 1)
+    ax.set_title("Acked package latency distribution", fontsize=30)
+    ax.set_ylabel("Latency / s", fontsize=20)
+    ax.set_xlabel("Time / s", fontsize=20)
+    ax.scatter(data_finish_time, data_lantency, label="Latency")
+    # plot average latency
+    ax.plot([0, data_finish_time[-1] ], [np.mean(data_lantency)]*2, label="Average Latency",
+            c='r')
+    plt.legend(fontsize=20)
 
-        plt.plot([last_x, plt_data[idx]["Life"] ], [y] * 2, c='r',
-                 label=used_label[1], linewidth=linewidth)
-        plt.plot([last_x, plt_data[idx]["Latency"]], [y] * 2, c='g',
-                 label=used_label[2], linewidth=linewidth)
+    # plot miss deadline rate block
+    ax = plt.subplot(pic_nums, 1, 2)
+    ax.set_title("Acked package lost distribution", fontsize=30)
+    ax.set_ylabel("Latency / s", fontsize=20)
+    ax.set_xlabel("Time / s", fontsize=20)
+    ax.scatter([data_finish_time[idx] for idx in data_drop], data_drop, label="Drop")
+    ax.scatter([data_finish_time[idx] for idx in data_miss_ddl], data_miss_ddl, label="Miss_deadline")
+    plt.legend(fontsize=20)
 
-        if plt_data[idx]["Drop"] == 1:
-            if fir_drop:
-                fir_drop = False
-                used_label[4] = "Miss deadline"
-            plt.scatter([-1], [idx + 1], c='r', marker='x', label=used_label[4])
+    # plot latency distribution
+    ax = plt.subplot(pic_nums, 1, 3)
+    ax.set_title("Acked package life time distribution", fontsize=30)
+    ax.set_ylabel("Latency / s", fontsize=20)
+    ax.set_xlabel("Time / s", fontsize=20)
+    ax.scatter(data_finish_time, data_sum_time, label="Latency")
+    # plot average latency
+    ax.plot([0, data_finish_time[-1]], [np.mean(data_sum_time)] * 2, label="Average Latency",
+            c='r')
+    plt.legend(fontsize=20)
 
     # plot bandwith
     if trace_file:
+        max_time = data_finish_time[-1]
         trace_list = []
         with open(trace_file, "r") as f:
             for line in f.readlines():
@@ -174,11 +194,12 @@ def analyze_pcc_emulator(log_file, trace_file=None, rows=20):
             plt.plot([st, max_time], [len(plt_data) + 1] * 2, '--',
                  label="Different Bandwith", linewidth=5)
 
-        plt.legend(fontsize=20)
-        plt.savefig("output/pcc_emulator-analysis.jpg")
+    plt.tight_layout()
+
+    plt.savefig("output/pcc_emulator-analysis.jpg")
 
 
 if __name__ == '__main__':
 
-    obj = Block()
-    print(obj)
+    log_package_file = "output/pcc_emulator_package.log"
+    analyze_pcc_emulator(log_package_file)
