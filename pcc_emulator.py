@@ -11,7 +11,12 @@ currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentfram
 parentdir = os.path.dirname(currentdir)
 sys.path.insert(0, parentdir)
 from common import sender_obs
-from utils import analyze_pcc_emulator, Block, Package
+from utils import (
+    analyze_pcc_emulator, Block, Package, get_emulator_info,
+    check_solution_format
+)
+from player import Solution
+
 
 DELTA_SCALE = 0.9
 
@@ -180,7 +185,8 @@ class Network():
 
         while self.cur_time < end_time:
             event_time, sender, package = heapq.heappop(self.q)
-            self.log_package(package)
+            self.log_package(event_time, package)
+            self.push_to_player(event_time, sender, package)
 
             event_type, next_hop, cur_latency, dropped, life, package_id = package.parse()
             # print("Got event %s, to link %d, latency %f at time %f" % (event_type, next_hop, cur_latency, event_time))
@@ -269,7 +275,7 @@ class Network():
         return reward * REWARD_SCALE
 
 
-    def log_package(self, package):
+    def log_package(self, event_time, package):
         '''
         package is tuple of (event_time, sender, event_type, next_hop, cur_latency, dropped, package_id, life)
         :param package: tuple
@@ -281,19 +287,36 @@ class Network():
             with open(self.log_package_file, "w") as f:
                 pass
 
-        with open(self.log_package_file, "a") as f:
+        log_data = { "Time" : event_time }
+        log_data.update(package.trans2dict())
 
-            f.write(str(package)+"\n")
+        with open(self.log_package_file, "a") as f:
+            f.write(str(log_data)+"\n")
 
         return package
 
 
+    def push_to_player(self, event_time, sender, package, event_type="package"):
+
+        if event_type == "package":
+            data = {
+                "event_time" : event_time,
+                "link_rate" : -1 if package.next_hop == 0 else sender.path[package.next_hop-1].bw,
+                "send_rate" : sender.rate,
+                "package" : package.trans2dict()
+            }
+        elif event_type == "system":
+            data = {
+
+            }
+
+        sender.solution.input_list.append(data)
+
+
 class Sender():
 
-    def __init__(self, rate, path, dest, features, cwnd=25, history_len=10):
+    def __init__(self, path, dest, features, history_len=10, solution=None):
         self.id = Sender._get_next_id()
-        self.starting_rate = rate
-        self.rate = rate
         self.sent = 0
         self.acked = 0
         self.lost = 0
@@ -308,12 +331,18 @@ class Sender():
         self.features = features
         self.history = sender_obs.SenderHistory(self.history_len,
                                                 self.features, self.id)
-        self.cwnd = cwnd
+
+        self.solution = solution
+        ret = check_solution_format(self.solution.make_decision())
+        self.rate = ret["send_rate"]
+        self.cwnd = ret["cwnd"]
+        self.starting_rate = self.rate
 
 
     _next_id = 1
     _package_id = 1
     _block_id = 1
+    _block_offset = -1
 
     @classmethod
     def _get_next_package(cls):
@@ -329,13 +358,33 @@ class Sender():
         return result
 
 
+    @classmethod
+    def _get_block_info(cls):
+        cls._block_offset += 1
+        if cls._block_offset == PACKAGE_NUM:
+            cls._block_id += 1
+            cls._block_offset = 0
+
+        return cls._block_id, cls._block_offset
+
+
     def new_block(self, cur_time):
+        block_info = Sender._get_block_info()
+
         package_id = Sender._get_next_package()
+        payload = BYTES_PER_PACKET-20
+        if BLOCK_SIZE % BYTES_PER_PACKET and \
+            package_id % PACKAGE_NUM == PACKAGE_NUM-1:
+            payload = BLOCK_SIZE % BYTES_PER_PACKET
+
         package = Package(create_time=cur_time,
                           next_hop=0,
-                          block_id=package_id // PACKAGE_NUM,
-                          package_id=package_id % PACKAGE_NUM,
-                          send_delay=1 / self.rate
+                          block_id=block_info[0],
+                          offset=block_info[1],
+                          package_id=package_id,
+                          send_delay=1 / self.rate,
+                          package_size=BYTES_PER_PACKET,
+                          payload=payload
                           )
         return package
 
@@ -360,6 +409,8 @@ class Sender():
 
     def can_send_packet(self):
         if USE_CWND:
+            ret = self.solution.make_decision()
+            self.rate, self.cwnd = ret["send_rate"], ret["cwnd"]
             return int(self.bytes_in_flight) / BYTES_PER_PACKET < self.cwnd
         else:
             return True
@@ -486,6 +537,9 @@ class PccEmulator(object):
         self.create_new_links_and_senders()
         self.net = Network(self.senders, self.links)
 
+        # for player
+        self.solution = Solution()
+
 
     def get_trace(self):
 
@@ -514,11 +568,11 @@ class PccEmulator(object):
         lat   = 0.03
         queue = 5
         loss  = 0.00
-        self.links = [Link(self.trace_list, queue)] # , Link(self.trace_list, queue)]
+        self.links = [Link(self.trace_list, queue) , Link(self.trace_list, queue)]
         #self.senders = [Sender(0.3 * bw, [self.links[0], self.links[1]], 0, self.history_len)]
         #self.senders = [Sender(random.uniform(0.2, 0.7) * bw, [self.links[0], self.links[1]], 0, self.history_len)]
-        self.senders = [Sender(random.uniform(0.99, 1) * bw, [self.links[0]],
-                               0, self.features, history_len=self.history_len, cwnd=25)]
+        self.senders = [Sender([self.links[0], self.links[1] ], 0, self.features,
+                               history_len=self.history_len, solution=Solution())]
 
 
     def run_for_dur(self, during_time):
@@ -535,20 +589,8 @@ class PccEmulator(object):
 
         sender_obs = self._get_all_sender_obs()
         sender_mi = self.senders[0].get_run_data()
-        event = {}
-        event["Name"] = "Step"
-        event["Time"] = self.steps_taken
-        event["Reward"] = reward
-        # event["Target Rate"] = sender_mi.target_rate
-        event["Send Rate"] = sender_mi.get("send rate")
-        event["Throughput"] = sender_mi.get("recv rate")
-        event["Latency"] = sender_mi.get("avg latency")
-        event["Loss Rate"] = sender_mi.get("loss ratio")
-        event["Latency Inflation"] = sender_mi.get("sent latency inflation")
-        event["Latency Ratio"] = sender_mi.get("latency ratio")
-        event["Send Ratio"] = sender_mi.get("send ratio")
-        # event["Cwnd"] = sender_mi.cwnd
-        # event["Cwnd Used"] = sender_mi.cwnd_used
+        event = get_emulator_info(sender_mi)
+        event["reward"] = reward
         self.event_record["Events"].append(event)
         if event["Latency"] > 0.0:
             self.run_dur = 0.5 * sender_mi.get("avg latency")

@@ -57,7 +57,10 @@ class Package(object):
                  create_time,
                  next_hop,
                  block_id,
+                 offset,
                  package_id,
+                 payload,
+                 package_size=1500,
                  deadline=0.2,
                  package_type="S",
                  drop = False,
@@ -68,7 +71,10 @@ class Package(object):
         self.create_time = create_time
         self.next_hop = next_hop
         self.block_id = block_id
+        self.offset = offset
         self.package_id = package_id
+        self.payload=payload
+        self.package_size=package_size
         self.deadline = deadline
         self.drop = drop
 
@@ -87,24 +93,31 @@ class Package(object):
                 self.package_id]
 
 
+    def trans2dict(self):
+        print_data = {
+            "Type": self.package_type,
+            "Position": self.next_hop,
+            "Send_delay": self.send_delay,
+            "Queue_delay": self.queue_delay,
+            "Propagation_delay": self.propagation_delay,
+            "Drop": 1 if self.drop else 0,
+            "Package_id": self.package_id,
+            "Block_id": self.block_id,
+            "Create_time": self.create_time,
+            "Deadline": self.deadline,
+            "Offset" : self.offset,
+            "Payload" : self.payload,
+            "Package_size" : self.package_size
+        }
+        return print_data
+
+
     def __lt__(self, other):
         return self.create_time < other.create_time
 
 
     def __str__(self):
-        print_data = {
-            "Time": self.create_time,
-            "Type": self.package_type,
-            "Position": self.next_hop,
-            "Send_delay" : self.send_delay,
-            "Queue_delay": self.queue_delay,
-            "Propagation_delay" : self.propagation_delay,
-            "Drop": 1 if self.drop else 0,
-            "Package_id": self.package_id,
-            "Block_id": self.block_id,
-            "Create_time" : self.create_time,
-            "Deadline" : self.deadline
-        }
+        print_data = self.trans2dict()
         return str(print_data)
 
 
@@ -197,6 +210,37 @@ def analyze_pcc_emulator(log_file, trace_file=None, rows=20):
     plt.tight_layout()
 
     plt.savefig("output/pcc_emulator-analysis.jpg")
+
+
+def check_solution_format(input):
+
+    if not isinstance(input, dict):
+        raise TypeError("The return value should be a dict!")
+
+    keys = ["cwnd", "send_rate"]
+    for item in keys:
+        if not item in input.keys():
+            raise ValueError("Key %s should in the return dict!" % (item))
+
+    return input
+
+
+def get_emulator_info(sender_mi):
+
+    event = {}
+    event["Name"] = "Step"
+    # event["Target Rate"] = sender_mi.target_rate
+    event["Send Rate"] = sender_mi.get("send rate")
+    event["Throughput"] = sender_mi.get("recv rate")
+    event["Latency"] = sender_mi.get("avg latency")
+    event["Loss Rate"] = sender_mi.get("loss ratio")
+    event["Latency Inflation"] = sender_mi.get("sent latency inflation")
+    event["Latency Ratio"] = sender_mi.get("latency ratio")
+    event["Send Ratio"] = sender_mi.get("send ratio")
+    # event["Cwnd"] = sender_mi.cwnd
+    # event["Cwnd Used"] = sender_mi.cwnd_used
+
+    return event
 
 
 if __name__ == '__main__':
