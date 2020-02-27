@@ -32,6 +32,7 @@ EVENT_TYPE_SEND = 'S'
 EVENT_TYPE_ACK = 'A'
 
 BYTES_PER_PACKET = 1500
+HEAD_PER_PACKAET = 20
 
 LATENCY_PENALTY = 1.0
 LOSS_PENALTY = 1.0
@@ -42,8 +43,8 @@ MAX_LATENCY_NOISE = 1.1
 USE_CWND = True
 
 
-BLOCK_SIZE = 15000
-PACKAGE_NUM = int(np.ceil(BLOCK_SIZE / BYTES_PER_PACKET))
+BLOCK_SIZE = 200000
+PACKAGE_NUM = int(np.ceil(BLOCK_SIZE / (BYTES_PER_PACKET-HEAD_PER_PACKAET) ))
 
 
 class Link():
@@ -372,10 +373,10 @@ class Sender():
         block_info = Sender._get_block_info()
 
         package_id = Sender._get_next_package()
-        payload = BYTES_PER_PACKET-20
-        if BLOCK_SIZE % BYTES_PER_PACKET and \
-            package_id % PACKAGE_NUM == PACKAGE_NUM-1:
-            payload = BLOCK_SIZE % BYTES_PER_PACKET
+        payload = BYTES_PER_PACKET-HEAD_PER_PACKAET
+        if BLOCK_SIZE % (BYTES_PER_PACKET-HEAD_PER_PACKAET) and \
+            block_info[1] % PACKAGE_NUM == PACKAGE_NUM-1:
+            payload = BLOCK_SIZE % (BYTES_PER_PACKET-HEAD_PER_PACKAET)
 
         package = Package(create_time=cur_time,
                           next_hop=0,

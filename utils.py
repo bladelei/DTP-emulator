@@ -129,13 +129,9 @@ def analyze_pcc_emulator(log_file, trace_file=None, rows=20):
         for line in f.readlines():
             plt_data.append(json.loads(line.replace("'", '"')))
 
-    plt_data = filter(lambda x:x['Type']=='A', plt_data)
+    plt_data = filter(lambda x:x["Type"]=='A' and x["Position"] == 2, plt_data)
     # priority by package id
-    plt_data = sorted(plt_data, key=lambda x:int(x["Package_id"])+10*int(x["Block_id"]))
-
-    labels = ["Queue time", "Transmission time", "Propagation time",
-              "Not created", "Miss deadline"]
-    max_time = plt_data[-1]["Time"]
+    plt_data = sorted(plt_data, key=lambda x:int(x["Package_id"]))
 
     pic_nums = 3
     data_lantency = []
@@ -149,11 +145,11 @@ def analyze_pcc_emulator(log_file, trace_file=None, rows=20):
             data_finish_time.append(item["Time"])
             data_sum_time.append(item["Send_delay"] + item["Queue_delay"] + item["Propagation_delay"])
             if item["Drop"] == 1:
-                data_drop.append(idx)
+                data_drop.append(len(data_finish_time)-1)
             if item["Deadline"] < data_sum_time[-1]:
-                data_miss_ddl.append(idx)
+                data_miss_ddl.append(len(data_finish_time)-1)
 
-    plt.figure(figsize=(20, 10))
+    plt.figure(figsize=(20, 5*pic_nums))
     # plot latency distribution
     ax = plt.subplot(pic_nums, 1, 1)
     ax.set_title("Acked package latency distribution", fontsize=30)
@@ -164,26 +160,33 @@ def analyze_pcc_emulator(log_file, trace_file=None, rows=20):
     ax.plot([0, data_finish_time[-1] ], [np.mean(data_lantency)]*2, label="Average Latency",
             c='r')
     plt.legend(fontsize=20)
+    ax.set_xlim(data_finish_time[0] / 2, data_finish_time[-1] * 1.5)
 
     # plot miss deadline rate block
     ax = plt.subplot(pic_nums, 1, 2)
     ax.set_title("Acked package lost distribution", fontsize=30)
     ax.set_ylabel("Latency / s", fontsize=20)
     ax.set_xlabel("Time / s", fontsize=20)
-    ax.scatter([data_finish_time[idx] for idx in data_drop], data_drop, label="Drop")
-    ax.scatter([data_finish_time[idx] for idx in data_miss_ddl], data_miss_ddl, label="Miss_deadline")
+    ax.scatter([data_finish_time[idx] for idx in data_drop],
+                    [data_lantency[idx] for idx in data_drop], label="Drop")
+    ax.scatter([data_finish_time[idx] for idx in data_miss_ddl],
+                    [data_lantency[idx] for idx in data_miss_ddl], label="Miss_deadline")
     plt.legend(fontsize=20)
+    ax.set_xlim(data_finish_time[0] / 2, data_finish_time[-1] * 1.5)
 
     # plot latency distribution
     ax = plt.subplot(pic_nums, 1, 3)
     ax.set_title("Acked package life time distribution", fontsize=30)
     ax.set_ylabel("Latency / s", fontsize=20)
     ax.set_xlabel("Time / s", fontsize=20)
+    ax.set_ylim(-np.min(data_sum_time)*2, np.max(data_sum_time)*2)
+
     ax.scatter(data_finish_time, data_sum_time, label="Latency")
     # plot average latency
     ax.plot([0, data_finish_time[-1]], [np.mean(data_sum_time)] * 2, label="Average Latency",
             c='r')
     plt.legend(fontsize=20)
+    ax.set_xlim(data_finish_time[0]/2, data_finish_time[-1]*1.5)
 
     # plot bandwith
     if trace_file:
