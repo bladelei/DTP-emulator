@@ -12,8 +12,9 @@ parentdir = os.path.dirname(currentdir)
 sys.path.insert(0, parentdir)
 from common import sender_obs
 from utils import (
-    analyze_pcc_emulator, Block, Package, get_emulator_info,
-    check_solution_format
+    analyze_pcc_emulator, Package, get_emulator_info,
+    check_solution_format,
+    Appication_Layer
 )
 from player import Solution
 
@@ -41,10 +42,6 @@ USE_LATENCY_NOISE = False
 MAX_LATENCY_NOISE = 1.1
 
 USE_CWND = True
-
-
-BLOCK_SIZE = 200000
-PACKAGE_NUM = int(np.ceil(BLOCK_SIZE / (BYTES_PER_PACKET-HEAD_PER_PACKAET) ))
 
 
 class Link():
@@ -163,8 +160,9 @@ class Network():
         for sender in self.senders:
             sender.register_network(self)
             sender.reset_obs()
-            package = sender.new_block(1.0 / sender.rate)
-            heapq.heappush(self.q, (1.0 / sender.rate, sender, package))
+            package = sender.new_package(1.0 / sender.rate)
+            if package:
+                heapq.heappush(self.q, (1.0 / sender.rate, sender, package))
 
 
     def reset(self):
@@ -185,6 +183,7 @@ class Network():
             sender.reset_obs()
 
         while self.cur_time < end_time:
+            # todo : if there is not data in queue
             event_time, sender, package = heapq.heappop(self.q)
             self.log_package(event_time, package)
             self.push_to_player(event_time, sender, package)
@@ -206,7 +205,7 @@ class Network():
                         sender.on_packet_lost()
                         # print("Packet lost at time %f" % self.cur_time)
                     else:
-                        sender.on_packet_acked(cur_latency)
+                        sender.on_packet_acked(cur_latency, package)
                         # print("Packet acked at time %f" % self.cur_time)
                 # ack back to source
                 else:
@@ -223,8 +222,9 @@ class Network():
                     if sender.can_send_packet():
                         sender.on_packet_sent()
                         push_new_event = True
-                    _package = sender.new_block(self.cur_time + (1.0 / sender.rate))
-                    heapq.heappush(self.q, (self.cur_time + (1.0 / sender.rate), sender, _package))
+                    _package = sender.new_package(self.cur_time + (1.0 / sender.rate))
+                    if _package:
+                        heapq.heappush(self.q, (self.cur_time + (1.0 / sender.rate), sender, _package))
 
                 else:
                     push_new_event = True
@@ -339,18 +339,10 @@ class Sender():
         self.cwnd = ret["cwnd"]
         self.starting_rate = self.rate
 
+        self.application = None
+
 
     _next_id = 1
-    _package_id = 1
-    _block_id = 1
-    _block_offset = -1
-
-    @classmethod
-    def _get_next_package(cls):
-        result = Sender._package_id
-        Sender._package_id += 1
-        return result
-
 
     @classmethod
     def _get_next_id(cls):
@@ -359,34 +351,15 @@ class Sender():
         return result
 
 
-    @classmethod
-    def _get_block_info(cls):
-        cls._block_offset += 1
-        if cls._block_offset == PACKAGE_NUM:
-            cls._block_id += 1
-            cls._block_offset = 0
-
-        return cls._block_id, cls._block_offset
+    def init_application(self, block_file):
+        self.application = Appication_Layer(block_file, BYTES_PER_PACKET)
 
 
-    def new_block(self, cur_time):
-        block_info = Sender._get_block_info()
-
-        package_id = Sender._get_next_package()
-        payload = BYTES_PER_PACKET-HEAD_PER_PACKAET
-        if BLOCK_SIZE % (BYTES_PER_PACKET-HEAD_PER_PACKAET) and \
-            block_info[1] % PACKAGE_NUM == PACKAGE_NUM-1:
-            payload = BLOCK_SIZE % (BYTES_PER_PACKET-HEAD_PER_PACKAET)
-
-        package = Package(create_time=cur_time,
-                          next_hop=0,
-                          block_id=block_info[0],
-                          offset=block_info[1],
-                          package_id=package_id,
-                          send_delay=1 / self.rate,
-                          package_size=BYTES_PER_PACKET,
-                          payload=payload
-                          )
+    def new_package(self, cur_time):
+        package = self.application.get_next_package(cur_time)
+        if package:
+            package.send_delay = 1 / self.rate
+        # print(package)
         return package
 
 
@@ -426,12 +399,13 @@ class Sender():
         self.bytes_in_flight += BYTES_PER_PACKET
 
 
-    def on_packet_acked(self, rtt):
+    def on_packet_acked(self, rtt, package):
         self.acked += 1
         self.rtt_samples.append(rtt)
         if (self.min_latency is None) or (rtt < self.min_latency):
             self.min_latency = rtt
         self.bytes_in_flight -= BYTES_PER_PACKET
+        self.application.get_ack_package(package)
 
 
     def on_packet_lost(self):
@@ -526,6 +500,7 @@ class PccEmulator(object):
         self.trace_cols = ("time", "bandwith", "loss_rate", "delay")
         self.queue_range = queue_range if queue_range else (10, 20)
         self.trace_file = trace_file
+        self.block_file = block_file
         self.event_record = { "Events" : [] }
 
         # unkown params
@@ -574,6 +549,8 @@ class PccEmulator(object):
         #self.senders = [Sender(random.uniform(0.2, 0.7) * bw, [self.links[0], self.links[1]], 0, self.history_len)]
         self.senders = [Sender([self.links[0], self.links[1] ], 0, self.features,
                                history_len=self.history_len, solution=Solution())]
+        for item in self.senders:
+            item.init_application(self.block_file)
 
 
     def run_for_dur(self, during_time):
@@ -660,4 +637,5 @@ if __name__ == '__main__':
     emulator.dump_events_to_file(log_file)
     emulator.print_debug()
     print(emulator.senders[0].rtt_samples)
+    print(emulator.senders[0].application.ack_blocks)
     analyze_pcc_emulator(log_package_file, trace_file)

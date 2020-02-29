@@ -23,7 +23,7 @@ class Block(object):
                  priority=0,
                  block_id=-1,
                  bytes_size=200000,
-                 deadline=200,
+                 deadline=0.2,
                  timestamp=None):
 
         self.priority = priority
@@ -52,14 +52,15 @@ class Block(object):
 
 
 class Package(object):
+    _package_id = 1
 
     def __init__(self,
                  create_time,
                  next_hop,
                  block_id,
                  offset,
-                 package_id,
                  payload,
+                 package_id=None,
                  package_size=1500,
                  deadline=0.2,
                  package_type="S",
@@ -81,6 +82,16 @@ class Package(object):
         self.send_delay = send_delay
         self.queue_delay = queue_delay
         self.propagation_delay = 0.0002
+
+        if package_id is None:
+            self.package_id = Package._get_next_package()
+
+
+    @classmethod
+    def _get_next_package(cls):
+        result = cls._package_id
+        cls._package_id += 1
+        return result
 
 
     def parse(self):
@@ -119,6 +130,140 @@ class Package(object):
     def __str__(self):
         print_data = self.trans2dict()
         return str(print_data)
+
+
+class Appication_Layer(object):
+
+
+    def __init__(self,
+                 block_file,
+                 bytes_per_packet=1500):
+        self.block_file = block_file
+        self.block_queue = []
+        self.bytes_per_packet = bytes_per_packet
+
+        self.block_nums = None
+        self.split_nums = 0
+        self.init_time = .0
+        self.pass_time = .0
+        self.fir_log = True
+
+        self.now_block = None
+        self.now_block_offset = 0
+        self.head_per_packet = 20
+
+        self.create_block_by_file()
+        self.ack_blocks = {}
+
+
+    def create_block_by_file(self, det=1):
+        with open(self.block_file, "r") as f:
+            self.block_nums = int(f.readline())
+
+            pattern_cols = ["type", "size", "ddl"]
+            pattern=[]
+            for line in f.readlines():
+                pattern.append(
+                    { pattern_cols[idx]:item.strip() for idx, item in enumerate(line.split(',')) }
+                )
+
+            peroid = len(pattern)
+            for idx in range(self.block_nums):
+                ch = idx % peroid
+                block = Block(bytes_size=float(pattern[ch]["size"]),
+                              block_id=idx,
+                              deadline=float(pattern[ch]["ddl"]),
+                              timestamp=self.init_time+self.pass_time+idx*det,
+                              priority=pattern[ch]["type"])
+                self.block_queue.append(block)
+
+
+    def select_block(self):
+
+        def is_better(block):
+            return (now_time - block.timestamp) * best_block.deadline > \
+                    (now_time - best_block.timestamp) * block.deadline
+
+
+        now_time = self.init_time + self.pass_time
+        best_block = None
+        ch = -1
+        need_filter = []
+        for idx, item in enumerate(self.block_queue):
+            # if miss ddl in queue, clean and log
+            if now_time > item.timestamp + item.deadline:
+                self.block_queue[idx].miss_ddl = 1
+                self.log_block(self.block_queue[idx])
+                need_filter.append(idx)
+                print(now_time, item.timestamp, item.deadline)
+
+            elif best_block == None or is_better(item) :
+                best_block = item
+                ch = idx
+
+        # filter block with missing ddl
+        for idx in range(len(need_filter)-1, -1, -1):
+            if ch != -1 and ch > idx:
+                self.block_queue.pop(ch)
+                ch = -1
+            self.block_queue.pop(need_filter[idx])
+        if ch != -1:
+            self.block_queue.pop(ch)
+        return best_block
+
+
+    def get_next_package(self, cur_time):
+        self.pass_time = cur_time
+        if self.now_block is None or self.now_block_offset == self.split_nums:
+            # due to loss packet in link queue, may check whether resend loss packet ?
+            self.now_block = self.select_block()
+            if self.now_block is None:
+                return None
+
+            self.now_block_offset = 0
+            self.split_nums = int(np.ceil(self.now_block.size / self.bytes_per_packet))
+
+        payload = self.bytes_per_packet - self.head_per_packet
+        if self.now_block.size % (self.bytes_per_packet - self.head_per_packet) and \
+                self.now_block_offset == self.split_nums - 1:
+            payload = self.now_block.size % (self.bytes_per_packet - self.head_per_packet)
+
+        package = Package(create_time=cur_time,
+                          next_hop=0,
+                          block_id=self.now_block.block_id,
+                          offset=self.now_block_offset,
+                          package_size=self.bytes_per_packet,
+                          payload=payload
+                          )
+        self.now_block_offset += 1
+
+        return package
+
+
+    def get_ack_package(self, package):
+        if package.block_id not in self.ack_blocks:
+            self.ack_blocks[package.block_id] = [package.offset]
+        else:
+            self.ack_blocks[package.block_id].append(package.offset)
+
+    # todo : Adjust log time and content
+    def log_block(self, block):
+
+        if self.fir_log:
+            self.fir_log = False
+            with open("output/block.log", "w") as f:
+                pass
+
+        block.finish_timestamp = self.init_time + self.pass_time
+        if block.get_cost_time() > block.deadline:
+            block.miss_ddl = 1
+
+        with open("output/block.log", "a") as f:
+            f.write(str(block)+'\n')
+
+
+    def analyze_application(self):
+        pass
 
 
 def analyze_pcc_emulator(log_file, trace_file=None, rows=20):
