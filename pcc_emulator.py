@@ -183,10 +183,14 @@ class Network():
             sender.reset_obs()
 
         while self.cur_time < end_time:
-            # todo : if there is not data in queue
-            event_time, sender, package = heapq.heappop(self.q)
+            queue_item = heapq.heappop(self.q)
+            if queue_item is None:
+                print("There is no packet from application~")
+                exit(0)
+
+            event_time, sender, package = queue_item
             self.log_package(event_time, package)
-            self.push_to_player(event_time, sender, package)
+            self.push_to_player(*queue_item)
 
             event_type, next_hop, cur_latency, dropped, life, package_id = package.parse()
             # print("Got event %s, to link %d, latency %f at time %f" % (event_type, next_hop, cur_latency, event_time))

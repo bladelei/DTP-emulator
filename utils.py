@@ -212,16 +212,32 @@ class Appication_Layer(object):
         return best_block
 
 
+    def get_retrans_package(self):
+        for key, val in self.ack_blocks.items():
+            if len(val) == self.split_nums:
+                continue
+            for i in range(self.split_nums):
+                if i not in val:
+                    return i
+        return None
+
+
     def get_next_package(self, cur_time):
         self.pass_time = cur_time
+        retrans_package = None
         if self.now_block is None or self.now_block_offset == self.split_nums:
-            # due to loss packet in link queue, may check whether resend loss packet ?
-            self.now_block = self.select_block()
-            if self.now_block is None:
-                return None
+            # 1. the retransmisson time is bad, which may cause consistently loss packet
+            # 2. the packet will be retransmission many times for a while
+            retrans_package = self.get_retrans_package()
+            if retrans_package:
+                self.now_block_offset = retrans_package
+            else:
+                self.now_block = self.select_block()
+                if self.now_block is None:
+                    return None
 
-            self.now_block_offset = 0
-            self.split_nums = int(np.ceil(self.now_block.size / self.bytes_per_packet))
+                self.now_block_offset = 0
+                self.split_nums = int(np.ceil(self.now_block.size / self.bytes_per_packet))
 
         payload = self.bytes_per_packet - self.head_per_packet
         if self.now_block.size % (self.bytes_per_packet - self.head_per_packet) and \
@@ -235,7 +251,10 @@ class Appication_Layer(object):
                           package_size=self.bytes_per_packet,
                           payload=payload
                           )
-        self.now_block_offset += 1
+        if retrans_package is None:
+            self.now_block_offset += 1
+        else:
+            self.now_block_offset = self.split_nums
 
         return package
 
