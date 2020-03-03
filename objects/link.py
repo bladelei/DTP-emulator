@@ -10,7 +10,6 @@ class Link():
         '''
         self.trace_list = trace_list
         if len(trace_list) == 0:
-            # use 全名
             self.bandwith = 20
             self.loss_rate = .0
             self.delay = .0

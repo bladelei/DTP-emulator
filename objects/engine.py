@@ -42,14 +42,13 @@ class Engine():
             sender.reset_obs()
 
         while self.cur_time < end_time:
-            queue_item = heapq.heappop(self.q)
-            if queue_item is None:
+            if len(self.q) == 0:
                 print("There is no packet from application~")
-                exit(0)
+                return
 
-            event_time, sender, packet = queue_item
+            event_time, sender, packet = heapq.heappop(self.q)
             self.log_packet(event_time, packet)
-            self.append_cc_input(*queue_item)
+            self.append_cc_input(event_time, sender, packet)
 
             event_type, next_hop, cur_latency, dropped, life, packet_id = packet.parse()
             # print("Got event %s, to link %d, latency %f at time %f" % (event_type, next_hop, cur_latency, event_time))
