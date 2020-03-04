@@ -119,11 +119,7 @@ def create_network(row, idx):
     trace_list = []
     bw = create_trace(change_scale=5, unchanged=4, cov=0.2, time_length=row)
     for i in range(row):
-        trace = []
-        trace.append(i * 10)
-        trace.append(bw.pop())
-        trace.append(0)
-        trace.append(0.001)
+        trace = [i * 10, bw.pop(), 0, 0.001]
         trace_list.append(trace)
 
     with open("first_group/traces_1.txt", "w+") as f:
